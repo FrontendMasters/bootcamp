@@ -19,9 +19,9 @@ steps:
 
   - task: CopyFiles@2
     inputs:
-      sourceFolder: "$(System.DefaultWorkingDirectory)"
+      sourceFolder: "$(System.DefaultWorkingDirectory)/public"
       contents: |
-        public/**/*
+        **/*
       targetFolder: "$(Build.ArtifactStagingDirectory)"
       overWrite: true
     displayName: "Copying built static files"
