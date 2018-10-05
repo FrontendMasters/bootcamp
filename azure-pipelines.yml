@@ -3,8 +3,13 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/vsts/pipelines/languages/javascript
 
+name: Frontend Masters Boot Camp
+
 pool:
   vmImage: "Ubuntu 16.04"
+
+trigger:
+  - master
 
 steps:
   - task: NodeTool@0
