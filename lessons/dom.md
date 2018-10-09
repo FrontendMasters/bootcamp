@@ -93,6 +93,7 @@ We've been able to modify HTML and CSS using JavaScript using `document`. Awesom
   button.addEventListener('click', function () {
     alert("Hey there!");
   });
+</script>
 ```
 
 Let's break it down.
