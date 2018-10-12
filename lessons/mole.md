@@ -84,9 +84,9 @@ console.log(Date.now());
   function next() {
     if (Date.now() > nextTime) {
       if (isHungry) {
-        mole.src = '../mole-game/mole-sad.png';
+        mole.src = './mole-game/mole-sad.png';
       } else {
-        mole.src = '../mole-game/mole-hungry.png';
+        mole.src = './mole-game/mole-hungry.png';
       }
       isHungry = !isHungry;
       nextTime = Date.now() + 1000;
