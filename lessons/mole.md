@@ -75,7 +75,7 @@ console.log(Date.now());
 - You can modify the `src` of an image and it updates the image.
 
 ```html
-<img style="background-color: brown" id="mole" src="./mole-game/mole-hungry.png" />
+<img style="background-color: brown" id="mole" src="../mole-game/mole-hungry.png" />
 <script>
   const mole = document.getElementById("mole")
 
@@ -84,9 +84,9 @@ console.log(Date.now());
   function next() {
     if (Date.now() > nextTime) {
       if (isHungry) {
-        mole.src = './mole-game/mole-sad.png';
+        mole.src = '../mole-game/mole-sad.png';
       } else {
-        mole.src = './mole-game/mole-hungry.png';
+        mole.src = '../mole-game/mole-hungry.png';
       }
       isHungry = !isHungry;
       nextTime = Date.now() + 1000;
@@ -104,9 +104,9 @@ Good luck!
 If you want to see my answers, [here is the JavaScript][js], [here is the CSS][css], and [here is the HTML][html].
 
 [alice]: https://www.pickledalice.com/
-[mole]: ./mole-game/mole.html
+[mole]: ../mole-game/mole.html
 [epoch]: https://en.wikipedia.org/wiki/Unix_time
-[assets]: ./mole.zip
+[assets]: ../mole.zip
 [js]: https://github.com/btholt/bootcamp/blob/master/static/mole-game/mole.js
 [css]: https://github.com/btholt/bootcamp/blob/master/static/mole-game/mole.css
 [html]: https://github.com/btholt/bootcamp/blob/master/static/mole-game/mole.html
