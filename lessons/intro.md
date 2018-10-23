@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 0
 title: "Introduction to the Course"
 path: "/intro"
 ---
