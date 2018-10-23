@@ -1,11 +1,10 @@
 ---
-order: -1
+order: 3
 title: "CSS"
 path: "/css"
 ---
 
 # Day 2 Exercises and References: CSS
-
 
 ### Together in class
 
@@ -20,7 +19,7 @@ Jen will discuss CSS terminology and introduce new ways to style, coding with yo
 
 **Declaration** (red)
 
- A single property-value pair
+A single property-value pair
 
 <pre><code>p { <span style="color: red">font-weight: bold;</span> }
 </code></pre>
@@ -56,7 +55,6 @@ Includes ALL of the individual declarations
 ```
 <p style="color: purple;">I am a purple paragraph!</p>
 ```
-
 
 ## Which should you use?
 
@@ -136,8 +134,8 @@ This is a combination of one or more classes, IDs, or elements, separated by spa
 
 ## Grouping selectors
 
-
 Make all `h1` AND `h2` red:
+
 ```
 h1, h2 { color: red; }
 ```
@@ -270,7 +268,6 @@ section h2 {
         </td>
     </tr>
  </table>
-
 
 ## References
 
