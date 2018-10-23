@@ -34,13 +34,13 @@ Includes ALL of the individual declarations
 
 ## Ways to include CSS in your document
 
-**External stylesheet** : attach a separate document in the \&lt;head\&gt; of your HTML.
+**External stylesheet** : attach a separate document in the `<head>` of your HTML.
 
 ```
 <link href="css/styles.css" rel="stylesheet" />
 ```
 
-**Internal stylesheet** or **embedded stylesheet** : Include styles in the \&lt;style\&gt; tag in the \&lt;head\&gt; of your HTML
+**Internal stylesheet** or **embedded stylesheet** : Include styles in the `<style>` tag in the `<head>` of your HTML
 
 ```
 <style>
@@ -52,7 +52,7 @@ Includes ALL of the individual declarations
 
 **Inline styles** : occur in the HTML tag itself
 
-```
+```html
 <p style="color: purple;">I am a purple paragraph!</p>
 ```
 
@@ -81,7 +81,7 @@ body {
 }
 ```
 
-### Class selectors
+### Class selectors `.classname`
 
 Create a class and attach it to an HTML tag to make the class appear.
 
@@ -89,16 +89,18 @@ Create a class and attach it to an HTML tag to make the class appear.
 - You may use a class several times in a document.
 - Classes are more specific than HTML elements and will generally override them.
 
-```
+```html
+<style>
 .warning {
     color: orange;
     font-weight: bold;
 }
+</style>
 
 <p class="warning">This paragraph displays a warning!</p>
 ```
 
-### ID selectors
+### ID selectors `#idname`
 
 Create an ID and attach it to an HTML tag to make the styling appear.
 
@@ -107,27 +109,31 @@ Create an ID and attach it to an HTML tag to make the styling appear.
 - IDs are the most specific, overriding styles from elements and classes.
 - IDs are not commonly used in CSS these days. They are more commonly used with JavaScript.
 
-```
+```html
+<style>
 #danger {
     color: red;
     font-weight: bold;
     text-transform: uppercase;
 }
+</style>
 
 <p id="danger">This text is uppercase, bold, and red, and you better pay attention because you're in danger only once on this web page!</p>
 ```
 
-### Descendant selectors
+### Descendant selectors `.classname element {}`
 
 This is a combination of one or more classes, IDs, or elements, separated by spaces, to indicate a family relationship.
 
-```
+```html
+<style>
 .warning p {
-    color: orange;
+    color: violet;
 }
+</style>
 
 <article class="warning">
-    <p>All paragraphs in this article will have a color of orange.</p>
+    <p>All paragraphs in this article will have a color of violet.</p>
     <p>This paragraph too! No more classes needed!</p>
 </article>
 ```
@@ -136,28 +142,48 @@ This is a combination of one or more classes, IDs, or elements, separated by spa
 
 Make all `h1` AND `h2` red:
 
-```
-h1, h2 { color: red; }
+```html
+<style>
+h4, h5 { color: green; }
+</style>
+
+<h4>I'm Green</h4>
+<h5>I'm Green Too!</h5>
 ```
 
-Make only the `h1`'s and `h2`'s in `<section>` red:
+Make only the `h4`'s in `<section>` blue:
+
+```html
+<style>
+section h6 { color: blue; }
+</style>
+
+<section>
+    <h6>I'm blue!!</h6>
+</section>
+<h6>I'm NOT blue</h6>
+```
+
+Make the `h4`'s and `h5`'s inside `<section>` pink:
+
+```html
+<style>
+section h4, section h5 { color: pink; }
+</style>
+
+<section>
+    <h4>I'm pink!!</h4>
+    <h5>I'm pink too</h5>
+</section>
+<h4>I'm NOT pink</h4>
+```
+
+For easier reading, you may wish to write selectors on seperate lines:
 
 ```
-section h1, h2 { color: red; }
-```
-
-Make only the `h1`'s and `h2`'s in `<section>` red:
-
-```
-section h1, section h2 { color: red; }
-```
-
-For easier reading, you may wish to write as:
-
-```
-section h1,
-section h2 {
-    color: red;
+section h4,
+section h5 {
+    color: pink;
 }
 ```
 
