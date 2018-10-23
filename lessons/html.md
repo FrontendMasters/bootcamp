@@ -4,11 +4,9 @@ title: "HTML"
 path: "/html"
 ---
 
-# Day 1 Exercises and References: HTML
+## Setup VSCode
 
-### Configure VSCode
-
-You should already have VSCode (Visual Studio Code) on your computer, as
+You should already have [VSCode](https://code.visualstudio.com) (Visual Studio Code) on your computer, as
 this was part of the Internet Fundamentals course:
 www.internetfundamentals.com
 
@@ -36,12 +34,7 @@ The extension is installed when your screen looks like this:
 
 ![](./images/vscode-enabled.jpg)
 
-###
-
-### Together in class
-
-Jen will discuss HTML terminology and introduce new tags, coding with
-you in VBCode.
+## Terminology
 
 - HTML
 

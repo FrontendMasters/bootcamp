@@ -4,12 +4,6 @@ title: "CSS"
 path: "/css"
 ---
 
-# Day 2 Exercises and References: CSS
-
-### Together in class
-
-Jen will discuss CSS terminology and introduce new ways to style, coding with you in VSCode.
-
 ## Terminology
 
 **Property** (red) and **value** (blue)
@@ -189,6 +183,8 @@ section h5 {
 
 ## Common CSS properties and values
 
+### font-family
+
 <table>
 <tr>
 <th>
@@ -198,7 +194,7 @@ section h5 {
  Possible values                                                          </th>
  </tr>
    <tr>
-      <td valign="top"><p>font-family</p>
+      <td valign="top"><p></p>
       </td>
       <td><p>Establishes the font family/families. Standard choices include:</p>
         <ul>
