@@ -250,7 +250,7 @@ http://validator.w3.org/
 
 ### Mark up a book chapter
 
-Clicking <a href="../jens-files/book%20excerpt.txt" download>book excerpt.txt</a> should save the file your "Downloads" folder (If not, use "File" -> "Save as...").
+Clicking <a href="../exercises/book%20excerpt.txt" download>book excerpt.txt</a> should save the file your "Downloads" folder (If not, use "File" -> "Save as...").
 
 This is the first chapter of a book published in 1922 and which is now out of copyright.
 
