@@ -172,7 +172,7 @@ section h4, section h5 { color: pink; }
 <h4>I'm NOT pink</h4>
 ```
 
-For easier reading, you may wish to write selectors on seperate lines:
+For easier reading, you may wish to write selectors on separate lines:
 
 ```
 section h4,
@@ -194,58 +194,116 @@ section h5 {
  Possible values                                                          </th>
  </tr>
    <tr>
-      <td valign="top"><p></p>
+      <td valign="top"><p>font-family</p>
       </td>
-      <td><p>Establishes the font family/families. Standard choices include:</p>
+      <td>
+      <p>Establishes the font family/families. Standard choices include:</p>
         <ul>
-          <li><strong>Sans-serif</strong>: Arial, Helvetica, Trebuchet MS, Verdana</li>
-          <li><strong>Serif</strong>: Times, Times New Roman, Georgia</li>
-          <li><strong>Monospace</strong>: Courier</li>
+          <li><strong><code>sans-serif</code></strong>: Arial, Helvetica, Trebuchet MS, Verdana</li>
+          <li><strong><code>serif</code></strong>: Times, Times New Roman, Georgia</li>
+          <li><strong><code>monospace</code></strong>: Courier</li>
         </ul>
-        <p><code>font-family: Arial, Helvetica, sans-serif;</code></p>
-        </td>
-    </tr>
-    <tr>
-      <td valign="top"><p>font-size</p></td>
-      <td><p>Default browser size is 16px = 1em = 1 rem</p>
-        <p><code>font-size: 1rem;</code></p>
-        </td>
-    </tr>
-    <tr>
-      <td valign="top"><p>font-style</p>
-      </td>
-      <td><p>Should the font be italic?</p>
-        <p><code>font-style: italic;</code></p>
-        <p><code>font-style: normal;</code></p>
-        </td>
-    </tr>
-    <tr>
-      <td valign="top"><p>font-weight</p>
-      </td>
-      <td><p>Should the font be bold?</p>
-        <p><code>font-weight: bold;</code></p>
-        <p><code>font-weight: normal;</code></p>
-        </td>
-    </tr>
-    <tr>
-      <td valign="top"><p>font</p></td>
-      <td><p>Shorthand for multiple font properties.</p>
-        <p><code>font: italic bold 1rem/1.3rem  Arial, Helvetica, sans-serif;</code></p>
-        <p>Font is Arial/Helvetica/sans-serif, italic, and bold, and 1rem in size, with 1.3rem line spacing.</p>
-        </td>
-    </tr>
-    <tr>
-      <td valign="top"><p>line-spacing</p></td>
-      <td><p>Distance between lines.</p>
-        <p><code>line-spacing: 1.3rem;</code></p>
-        </td>
-    </tr>
-    <tr>
-      <td valign="top"><p>color</p></td>
-      <td><p>Text color.</p>
-        <p><code>color: white;</code></p>
-        </td>
-    </tr>
+
+```html
+<style>
+p.example-family { font-family: Arial, Helvetica, sans-serif; }
+</style>
+
+<p class="example-family">The quick brown fox jumps over the lazy dog.</p>
+```
+
+</td>
+</tr>
+<tr>
+<td valign="top"><p>font-size</p></td>
+<td><p>Default browser size is <code>16px = 1em = 1 rem</code></p>
+
+```html
+<style>
+p.example-fontsize { font-size: 1rem; }
+</style>
+
+<p class="example-fontsize">The quick brown fox jumps over the lazy dog.</p>
+```
+
+</td>
+</tr>
+<tr>
+<td valign="top"><p>font-style</p>
+</td>
+<td><p>Should the font be <code>italic</code> or <code>normal</code>?</p>
+
+```html
+<style>
+p.example-fontstyle { font-style: italic; }
+</style>
+
+<p class="example-fontstyle">The quick brown fox jumps over the lazy dog.</p>
+```
+
+</td>
+</tr>
+<tr>
+<td valign="top"><p>font-weight</p>
+</td>
+<td><p>Should the font be <code>bold</code> or <code>normal</code>?</p>
+
+```html
+<style>
+p.example-fontweight { font-weight: bold; }
+</style>
+
+<p class="example-fontweight">The quick brown fox jumps over the lazy dog.</p>
+```
+
+</td>
+</tr>
+<tr>
+<td valign="top"><p>font</p></td>
+<td><p>Shorthand for multiple <code>font</code> properties.</p>
+
+```html
+<style>
+p.example-fontshorthand { font: italic bold 1rem/1.3rem  Arial, Helvetica, sans-serif; }
+</style>
+
+<p class="example-fontshorthand">Font is Arial/Helvetica/sans-serif, italic, and bold, and 1rem in size, with 1.3rem line spacing.</p>
+```
+
+</td>
+</tr>
+<tr>
+<td valign="top"><p>line-height</p></td>
+<td><p>Distance between lines.</p>
+
+```html
+<style>
+p.example-lineheight { line-height: 1.3rem; }
+</style>
+
+<p class="example-lineheight">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+```
+
+</td>
+</tr>
+<tr>
+<td valign="top"><p>color</p></td>
+<td><p>Text color.</p>
+
+```html
+<style>
+p.example-color {
+    background-color: grey;
+    color: pink;
+    }
+</style>
+
+<p class="example-color">The quick brown fox jumps over the lazy dog.</p>
+```
+
+</td>
+</tr>
+
    <tr>
       <td valign="top"><p>background</p>
         <p>background-color<br/>
@@ -253,19 +311,52 @@ section h5 {
         background-position<br/>
         background-repeat</p>
         </td>
-      <td><p>Dealing with background images and colors. Background property is shorthand for all of the other properties.</p>
+      <td><p>Dealing with background images and colors. <code>background</code> property is shorthand for all of the other properties.</p>
         <p>By default, background images repeat.</p>
-        <p><code>background-color: blue;</code></p>
-        <p><code>background: red url(image.jpg) no-repeat left top;</code></p>
-        <p>means a background color of red, background image of image.jpg, display it once at the left top corner, no repeat of the image.</p>
-        <p>Image will display over the color. You may specify a color in case the image doesn't display.</p>
-        </td>
+        <p><code>background-color: blue;</code> sets the background to blue.</p>
+
+```html
+<style>
+p.example-background1 {
+    background-color: blue;
+    }
+</style>
+
+<p class="example-background1">The quick brown fox jumps over the lazy dog.</p>
+```
+
+<p>While <code>background: red url(image.jpg) no-repeat left top;</code> means a background color of red, background image of <code>image.jpg</code>, display it once at the left top corner, no repeat of the image.</p>
+
+```html
+<style>
+p.example-background2 {
+    background: red url(https://placekitten.com/g/200/300) no-repeat left top;
+    height: 6rem;
+    }
+</style>
+
+<p class="example-background2">The quick brown fox jumps over the lazy dog.</p>
+```
+
+<p>Image will display over the color. You may specify a color in case the image doesn't display.</p>
+
+</td>
     </tr>
     <tr>
       <td valign="top"><p>text-decoration</p></td>
       <td><p>Turns off the underline in links.</p>
-        <p>Values include none, underline.</p>
-        <p><code>text-decoration: none;</code></p>
+        <p>Values include <code>none</code>, <code>underline</code>.</p>
+
+```html
+<style>
+a.example-textdecoration {
+    text-decoration: none;
+    }
+</style>
+
+<p>The quick brown <a class="example-textdecoration" href="https://www.youtube.com/watch?v=jofNR_WkoCE">fox jumps</a> over the <a href="https://giphy.com/gifs/cheezburger-dog-dogs-FdWU4HtO5vTGw">lazy dog</a>.</p>
+```
+
    </td>
     </tr>
         <tr>
@@ -276,19 +367,43 @@ section h5 {
         :active</p></td>
       <td><p>Pseudoclasses: specify styling in these states.</p>
         <ul>
-          <li>:link -- unvisited link</li>
-          <li>:visited -- visited state</li>
-          <li>:focus -- the currently "focused" (selected) element </li>
-          <li>:hover -- hover your mouse over this </li>
-          <li>:active -- the time between the link is selected and the time the page loads. (Not used much today.)</li>
+          <li><code>:link</code> — unvisited link</li>
+          <li><code>:visited</code> — visited state</li>
+          <li><code>:focus</code> — the currently "focused" (selected) element </li>
+          <li><code>:hover</code> — hover your mouse over this </li>
+          <li><code>:active</code> — the time between the link is selected and the time the page loads. (Not used much today.)</li>
         </ul>
-        <p>If you are using these pseudoclasses, they MUST go in the order listed.</p>
+        <p>If you are using these pseudo-classes, they MUST go in the order listed.</p>
         <p>To remember:</p>
         <p><strong>L</strong>ord <strong>V</strong>ader <strong>F</strong>ormer <strong>H</strong>andle <strong>A</strong>nakin</p>
-        <p>:link, :visited, :active are used almost exclusively on links (the <strong>A</strong> tag).</p>
-        <p>The pseudoclasses :focus and :hover are used with links and with any other element on the page. :focus is especially useful with forms and in accessibility contexts.</p>
-        </td>
+        <p><code>:link</code>, <code>:visited</code>, <code>:active</code> are used almost exclusively on links (the <strong><code>A</code></strong> tag).</p>
+        <p>The pseudo-classes <code>:focus</code> and <code>:hover</code> are used with links and with any other element on the page. <code>:focus</code> is especially useful with forms and in accessibility contexts.</p>
+
+```html
+<style>
+a.example:link, {
+    color: #cccccc;
+    }
+a.example:visited, {
+    color: #0000ff;
+    }
+a.example:focus {
+    border: 1px dotted black;
+    }
+a.example:hover {
+    color: #ff6666;
+    }
+a.example:active, {
+    color: #333333;
+    }
+</style>
+
+<p>The quick brown <a class="example" href="https://www.youtube.com/watch?v=jofNR_WkoCE">fox jumps</a> over the <a href="https://giphy.com/gifs/cheezburger-dog-dogs-FdWU4HtO5vTGw">lazy dog</a>.</p>
+```
+
+</td>
     </tr>
+
  </table>
 
 ## References
@@ -356,3 +471,7 @@ If you still need more to do, make a page about some of your hobbies and activit
 - Links to websites describing your hobby, or where hobbyists discuss what they do
 
 If you manage to get as far as creating both web pages, link them together with a navigation bar.
+
+```
+
+```
