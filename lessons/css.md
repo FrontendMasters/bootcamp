@@ -181,7 +181,7 @@ section h5 {
 }
 ```
 
-Note that this is NOT the same as the above selector. This says "make all `h4`'s in sections have a black background, and make ALL `h5`'s have a black background.
+Note that this is NOT the same as the above selector. This says "make all `h4`'s in sections have a black background, and make ALL `h5`'s have a black background."
 ```
 section h4,
 h5 {
@@ -396,11 +396,11 @@ a.example:active, {
 
 [http://jigsaw.w3.org/css-validator/](http://jigsaw.w3.org/css-validator/)
 
-**Convert pixels to ems and % **
+**Convert pixels to ems and %**
 
 [http://www.pxtoem.com/](http://www.pxtoem.com/)
 
-**Color palettes, if you need help creating one **
+**Color palettes, if you need help creating one**
 
 [http://color.adobe.com/](http://color.adobe.com/)
 
