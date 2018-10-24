@@ -1,5 +1,5 @@
 ---
-order: 9
+order: 11
 title: "Exercise: Make the Tests Pass"
 path: "/tests"
 ---
