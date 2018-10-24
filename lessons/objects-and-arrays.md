@@ -1,5 +1,5 @@
 ---
-order: 7
+order: 8
 title: "Objects and Arrays"
 path: "/objects-and-arrays"
 ---

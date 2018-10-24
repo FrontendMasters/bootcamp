@@ -1,5 +1,5 @@
 ---
-order: 10
+order: 11
 title: "Building an HTML, CSS, and JavaScript Calculator"
 path: "/calculator"
 ---

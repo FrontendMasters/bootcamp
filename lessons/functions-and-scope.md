@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 6
 title: "Functions and Scope"
 path: "/functions-and-scope"
 ---
