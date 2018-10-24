@@ -134,7 +134,7 @@ This is a combination of one or more classes, IDs, or elements, separated by spa
 
 ## Grouping selectors
 
-Make all `h1` AND `h2` red:
+Make all `h4` AND `h5` red:
 
 ```html
 <style>
@@ -145,7 +145,7 @@ h4, h5 { color: green; }
 <h5>I'm Green Too!</h5>
 ```
 
-Make only the `h4`'s in `<section>` blue:
+Make only the `h6`'s in `<section>` blue:
 
 ```html
 <style>
@@ -178,6 +178,14 @@ For easier reading, you may wish to write selectors on separate lines:
 section h4,
 section h5 {
     color: pink;
+}
+```
+
+Note that this is NOT the same as the above selector. This says "make all `h4`'s in sections have a black background, and make ALL `h5`'s have a black background."
+```
+section h4,
+h5 {
+    background-color: black;
 }
 ```
 
@@ -370,10 +378,7 @@ a.example:active, {
 <p>The quick brown <a class="example" href="https://www.youtube.com/watch?v=jofNR_WkoCE">fox jumps</a> over the <a href="https://giphy.com/gifs/cheezburger-dog-dogs-FdWU4HtO5vTGw">lazy dog</a>.</p>
 ```
 
-</td>
-    </tr>
 
- </table>
 
 ## References
 
@@ -390,6 +395,14 @@ a.example:active, {
 **Validating CSS**
 
 [http://jigsaw.w3.org/css-validator/](http://jigsaw.w3.org/css-validator/)
+
+**Convert pixels to ems and %**
+
+[http://www.pxtoem.com/](http://www.pxtoem.com/)
+
+**Color palettes, if you need help creating one**
+
+[http://color.adobe.com/](http://color.adobe.com/)
 
 ## Exercises
 

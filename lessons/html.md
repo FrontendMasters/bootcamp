@@ -28,7 +28,7 @@ path: "/html"
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
 
-### Headings `<h1></h1><h2></h2>`
+### Headings `<h1></h1><h2></h2> ... <h6></h6>`
 
 ```html
 <h1>My Fine Website</h1>
@@ -40,7 +40,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
 
-### Unordered list `<ul></ul>` (often called a "bullet list" - but remember, there's no formatting in HTML!)
+### Unordered list `<ul></ul>` 
 
 Unordered list (often called a "bullet list" - but remember, there's no formatting in HTML!)
 
@@ -60,7 +60,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
 
 ### List item `<li></li>`
 
-Always nested inside a `<ul>` or `<ol>` tag!
+_Always_ nested inside a `<ul>` or `<ol>` tag!
 
 ```html
 <ul>
@@ -72,11 +72,10 @@ Always nested inside a `<ul>` or `<ol>` tag!
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
 
-### Ordered list `<ol></ol>` (often called a "number list")
+### Ordered list `<ol></ol>` 
+Used for lists where the order is important (like a list of instructions). Often called a "number list" - but remember there's no formatting in HTML!
 
-Used for lists where the order is important (like a list of instructions)
-
-Always contains `<li>` tags!
+_Always_ contains `<li>` tags!
 
 ```html
 <ol>
@@ -99,7 +98,7 @@ Another line of the poem</p>
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/br
 
-### Quotation block. `<blockquote></blockquote>`
+### Quotation block `<blockquote></blockquote>`
 
 Used for longer quotations.
 
@@ -112,7 +111,7 @@ Used for longer quotations.
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
 
-### Citation element. `<cite></cite>`
+### Citation element `<cite></cite>`
 
 Used for citing a creative work.
 
@@ -125,9 +124,43 @@ Used for citing a creative work.
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite
 
-### Text is of strong importance. `<strong></strong>`
+### Links and anchors `<a></a>`
 
-Text is generally rendered bold, but this is not a reason to use this tag.
+Links can go anywhere: to pages on your site, to pages on other sites, or to files (like a PDF).
+
+```html
+<a href="http://www.google.com">Go to Google</a>
+```
+
+Anchors are useful for navigating within a single web page. You need to code an anchor and a link pointing to the anchor to make this work. The anchor is placed where you want the user to start reading. The link is placed where you wish the user to click to skip to that anchor. "Back to top" links are a typical example.
+
+Anchor: `<a id="top"></a>`
+
+Link to an anchor: `<a href="#top">Back to top</a>`
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+
+### Image `<img>`
+
+Displays an image on your page. Image formats include JPG, GIF, PNG. You may see SVG elements as well. The src (source) attribute is required. Also consider adding an alt attribute.
+
+JPG, GIF, PNG = raster images (a bunch of pixels)
+
+SVG = vector image (a mathematical equation)
+
+src = image source (a file path to the image)
+
+alt = alternative text. Displays if the image does not. Read by search engines and screen readers. It should fully describe the image, so you could imagine what the image looked like if you could not see it.
+
+```html
+<img src="../jens-files/images/blog1.jpg" alt="A friendly, smiling alien.">
+```
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
+
+### Strong importance `<strong></strong>`
+
+An item is strongly important relative to surrounding text. Text is generally rendered bold, but this is not a reason to use this tag.
 
 ```html
 <p>Putting your hand on a hot stove <strong>will get you burned</strong>. Don't do it!</p>
@@ -135,44 +168,14 @@ Text is generally rendered bold, but this is not a reason to use this tag.
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
 
-### Item is emphasized relative to surrounding text. `<em></em>`
+### Emphasized text `<em></em>`
 
-Text is generally rendered in italics, but this is not a reason to use this tag.
+An item is emphasized relative to surrounding text. Text is generally rendered in italics, but this is not a reason to use this tag.
 
 ```html
 <p>You simply <em>must</em> try this new coffee shop!</p>
 ```
-
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
-
-### Links, anchors. `<a></a>`
-
-Anchors are used for in-page navigation, while links can go anywhere.
-
-```html
-<a href="http://www.google.com">Go to Google</a>
-```
-
-Anchor: `<a id="top"></a>`
-
-Link to an archor: `<a href="#top">Back to top</a>`
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
-
-### Image tag. `<img src="image.jpg">`
-
-The src (source) attribute is required. Also consider adding an alt attribute.
-
-Displays an image on your page. Image formats include JPG, GIF, PNG. You may see SVG elements as well.
-
-JPG, GIF, PNG = raster images (a bunch of pixels)
-SVG = vector image (a mathematical equation)
-
-```html
-<img src="../jens-files/images/blog1.jpg" alt="A great description of this image which is a friendly alien.">
-```
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 
 ### What is the difference between `<strong>` and `<em>` ?
 
@@ -183,7 +186,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
 > Both \<strong\> and \<em\> can be nested to increase the relative
 > degree of importance or stress emphasis, respectively.
 
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
+Explanation taken from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
 
 ## References
 
