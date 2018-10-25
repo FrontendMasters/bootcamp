@@ -389,6 +389,17 @@ There are other methods to clear as well. A popular one is to self-clear the par
 ```
 Read more about clearing: https://css-tricks.com/snippets/css/clear-fix/
 
+## Styling navigation bars in a horizontal and vertical direction
+
+We'll work with CodePen for learning how to style navigation bars using all of the box model information we've covered so far.
+
+For our vertical navigation bar, we'll turn off the bullets in the list, then style the list of links to look like buttons.
+
+Vertical navigation bars: https://codepen.io/jen4web/pen/xymQoM
+
+For our horizontal navigation bar, we'll make our unordered list go vertically on the page using `display: inline-block;`. 
+
+Horizontal navigation bars: https://codepen.io/jen4web/pen/OBrrLR
 
 
 ## References
