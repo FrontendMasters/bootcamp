@@ -6,7 +6,11 @@ path: "/layout"
 
 ## Together in class
 
-Jen will discuss the box model and introduce layouts, coding with you in VSCode. We will code a navigation bar and code a page layout.
+Let's explore the box model, including padding, border, margin, width, and height, as well as the display:inline and display: block properties, using this CodePen link:
+
+https://codepen.io/jen4web/pen/JmweGL?editors=1100
+
+
 
 ![Box model](./images/css-boxmodel.png)
 
@@ -198,61 +202,6 @@ p.margin4 {
 
 See "shorthand" below for understanding values.
 
-### `float`
-
-Pulls the element from "normal flow" and floats it in the direction indicated. Space the element occupied is eliminated.
-Values include `left`, `right`,`none`
-
-Note: if you are floating an element other than an image, you should also specify a width.
-
-```html
-<style>
-.float1 {
-    float: left;
-}
-</style>
-
-<p>
-<img class="float1" src="https://placekitten.com/g/100/100">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-```
-
-### `clear`
-
-What you must do if you float! Clear re-establishes normal flow.
-Values include `left`, `right`, `both`
-
-```html
-<style>
-.p-float1 {
-    float: left;
-    width: 200px;
-    height: 75px;
-    margin: 20px;
-    border: 5px solid blue;
-}
-.p-clear2 {
-    border: 4px solid red;
-    clear: left;
-}
-</style>
-
-<p class="p-float1">Lorem ipsum </p>
-<p class="p-clear2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-```
-There are other methods to clear as well. A popular one is to self-clear the parent using this formula:
-
-```html
-<style>
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-</style>
-```
-Read more about clearing: https://css-tricks.com/snippets/css/clear-fix/
-
 ### `width`
 
 The width of a particular element. In general, use relative units like `%`, `em`, `rem`, rather than `px`.
@@ -380,6 +329,67 @@ p.example-shorthand4 {
 
 <p class="example-shorthand4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
+
+## Understanding Floats and Clears
+
+We will use this CodePen example to explore the world of floats and clears: https://codepen.io/jen4web/pen/xymQdz?editors=1100
+
+### `float`
+
+Pulls the element from "normal flow" and floats it in the direction indicated. Space the element occupied is eliminated.
+Values include `left`, `right`,`none`
+
+Note: if you are floating an element other than an image, you should also specify a width.
+
+```html
+<style>
+.float1 {
+    float: left;
+}
+</style>
+
+<p>
+<img class="float1" src="https://placekitten.com/g/100/100">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+```
+
+### `clear`
+
+What you must do if you float! Clear re-establishes normal flow.
+Values include `left`, `right`, `both`
+
+```html
+<style>
+.p-float1 {
+    float: left;
+    width: 200px;
+    height: 75px;
+    margin: 20px;
+    border: 5px solid blue;
+}
+.p-clear2 {
+    border: 4px solid red;
+    clear: left;
+}
+</style>
+
+<p class="p-float1">Lorem ipsum </p>
+<p class="p-clear2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+```
+There are other methods to clear as well. A popular one is to self-clear the parent using this formula:
+
+```html
+<style>
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+```
+Read more about clearing: https://css-tricks.com/snippets/css/clear-fix/
+
+
 
 ## References
 
