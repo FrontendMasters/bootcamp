@@ -40,11 +40,11 @@ Shorthand: `border: 1px solid red;`
 <p class="border1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 ```
 
-`Width` values: can be anything you want.
+`Width` values: can be anything you want. Default is 3px.
 
 `Style` values: `solid`, `dotted`, `dashed`, `double`, `groove`, `ridge`, `inset`, `outset`. Also `none`, `hidden`. Without a style, the border will not display.
 
-`Color` values: Any color you want, written in any format you want!
+`Color` values: Any color you want, written in any format you want! Default is black.
 
 ### `border-radius`
 
@@ -94,6 +94,7 @@ Padding is the distance between the content and the border.
 p.padding1 {
     padding: 20px;
     background-color: blue;
+    color: white;
 }
 </style>
 
@@ -105,6 +106,7 @@ p.padding1 {
 p.padding2 {
     padding: 10px 30px;
     background-color: blue;
+    color: white;
 }
 </style>
 
@@ -114,8 +116,9 @@ p.padding2 {
 ```html
 <style>
 p.padding3 {
-    padding: 5px 0 20px 1rem;
+    padding: 5% 0 20px 1rem;
     background-color: blue;
+    color: white;
 }
 </style>
 
@@ -127,6 +130,7 @@ p.padding3 {
 p.padding4 {
     padding-left: 15px;
     background-color: blue;
+    color: white;
 }
 </style>
 
@@ -149,6 +153,7 @@ Margin is the area outside of the border.
 p.margin1 {
     margin: 20px;
     background-color: blue;
+    color: white;
 }
 </style>
 
@@ -160,6 +165,7 @@ p.margin1 {
 p.margin2 {
     margin: 10px 30px;
     background-color: blue;
+    color: white;
 }
 </style>
 
@@ -169,8 +175,9 @@ p.margin2 {
 ```html
 <style>
 p.margin3 {
-    margin: 5px 0 20px 1rem;
+    margin: 5% 0 20px 1rem;
     background-color: blue;
+    color: white;
 }
 </style>
 
@@ -182,6 +189,7 @@ p.margin3 {
 p.margin4 {
     margin-left: 15px;
     background-color: blue;
+    color: white;
 }
 </style>
 
@@ -232,6 +240,18 @@ Values include `left`, `right`, `both`
 <p class="p-float1">Lorem ipsum </p>
 <p class="p-clear2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
+There are other methods to clear as well. A popular one is to self-clear the parent using this formula:
+
+```html
+<style>
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+```
+Read more about clearing: https://css-tricks.com/snippets/css/clear-fix/
 
 ### `width`
 
@@ -309,7 +329,7 @@ margin-bottom: 3%;
 margin-left: 2rem;
 ```
 
-You can use one, two, three and four values within a shorthand declaration. For example, the rule below will apply padding to all sides of a box:
+A shorthand declaration typically contains 1-4 values. For example, the rule below will apply 5em of padding to all sides of a box:
 
 ```html
 <style>
@@ -322,7 +342,7 @@ p.example-shorthand1 {
 <p class="example-shorthand1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
 
-The rule below will apply 1em of padding to the top and bottom, and 2em of padding to the left and right of the box.
+This declaration will apply 1em of padding to the top and bottom, and 5em of padding to the left and right of the box.
 
 ```html
 <style>
@@ -335,7 +355,7 @@ p.example-shorthand2 {
 <p class="example-shorthand2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
 
-The rule below will apply 1em of padding to the top, 2em of padding to the left and right, and 3em to the bottom of the box.
+This declaration will apply 1em of padding to the top, 3em of padding to the left and right, and 5em to the bottom of the box. (Note: a 3-number shorthand is almost never used... maybe because no one can remember which numbers stand for what dimension!)
 
 ```html
 <style>
@@ -348,7 +368,7 @@ p.example-shorthand3 {
 <p class="example-shorthand3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
 
-The rule below will apply 1em of padding to the top, 2em of padding to the right, 3em of padding to the bottom and 4em of padding to the left of the box.
+This declaration will apply 1em of padding to the top, 3em of padding to the right, 5em of padding to the bottom and 7em of padding to the left of the box.
 
 ```html
 <style>
