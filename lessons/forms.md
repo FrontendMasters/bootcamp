@@ -57,7 +57,7 @@ Simple text entry field. Useful for collecting generic text (think name, address
 
 Phone number field.
 
-Doesn't look different from text on a desktop, but on most mobile devices, will display a number keyboard.
+Doesn't look different from the text field on a desktop, but on most mobile devices, it will display a number keyboard.
 
 ```html
 <form action="index.php" method="post">
@@ -75,7 +75,7 @@ Phone number:</label>
 
 Email field.
 
-Doesn't look different from text on a desktop, but on most mobile devices, will display a keyboard with an easily accessible @ symbol, and sometimes additional keys (like a .com key).
+Doesn't look different from the text field on a desktop, but on most mobile devices, will display a keyboard with an easily accessible @ symbol, and sometimes additional keys (like a .com key).
 
 ```html
 <form action="index.php" method="post">
@@ -113,7 +113,7 @@ Pick a date:</label>
 
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number)
 
-Number entry. Can go positive and negative. Does not error check for numbers, though. May change the mobile keyboard to numbers.
+Number entry. Can go positive and negative. Does not error-check for numbers, though, if they are outside of a specified range. May change the mobile keyboard to numbers.
 
 Attributes:
 
@@ -125,12 +125,14 @@ Attributes:
 
 <label for="myqty">
 How many do you want:</label>
-<input type="number" id="qty" min="1" max="10">
+<input type="number" id="myqty" min="1" max="10">
 
 </form>
 ```
 
 ### `<input type="radio">`
+
+[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
 
 Radio buttons — suitable for a single choice among a few options. There should be at least two choices.
 
@@ -144,7 +146,10 @@ Attributes:
 <form action="index.php" method="post">
 
 <label>
-<input type="radio" name="myradio" value="choice1" checked> Choice 1
+  <input type="radio" name="myradio" value="choice1" checked> Choice 1
+</label>
+<label>
+  <input type="radio" name="myradio" value="choice2"> Choice 2
 </label>
 
 </form>
@@ -152,7 +157,7 @@ Attributes:
 
 ### `<input type="checkbox">`
 
-[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
+[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
 
 Checkboxes — suitable for several choices among a few options. There can be a single checkbox.
 
@@ -160,22 +165,22 @@ Attributes:
 
 - `name` — optional, but explains what this checkbox is about (in addition to `ID`)
 - `value` — unique value for each checkbox - what is this choice?
-- c`hecked` — start the form with this item selected
+- `checked` — start the form with this item selected
 
 ```html
 <form action="index.php" method="post">
 
 <label>
-<input id="subscribe" type="checkbox" value="subscribe">Add me to your email list
-
+  <input id="subscribe" type="checkbox" value="subscribe">Add me to your email list
 </label>
 
 </form>
 ```
 
-[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
 
 ### `<textarea></textarea>`
+
+A large box for extended comments.
 
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
 
@@ -211,6 +216,8 @@ What kind of pie would you like?</label>
 
 ### `<label></label>`
 
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label
+
 Associates a text label with a form field. Many examples of this given above.
 
 Depending on application, may have a for attribute. The for attribute is set to the same value as the ID given to the form field.
@@ -234,7 +241,7 @@ See above examples.
 
 Whew, we have done a LOT this week! If you want to spend time reviewing, making new pages, or working on exercises, this is a great time to do that.
 
-Plan your portfolio
+### Plan your portfolio
 Spend some time planning your portfolio. You will be creating this over the weekend and posting it to your GitHub site (which we will create tomorrow).
 
 Consider reusing the about and contact pages we already created, and maybe the book chapter would make a good artifact to display.
