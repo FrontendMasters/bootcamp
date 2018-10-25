@@ -30,9 +30,9 @@ The `form` element surrounds your entire form. Required!
 
 Standard attributes include `method` and `action`.
 
-`Method` values: `get`, `post`. Has to do with how information is submitted to the server. Your web developer will tell you which method to use.
+`method` values: `get`, `post`. Has to do with how information is submitted to the server. Your web developer will tell you which method to use.
 
-`Action` value: given to you by your web developer.
+`action` value: given to you by your web developer.
 
 ### `<input type="text">`
 
@@ -43,10 +43,8 @@ Simple text entry field. Useful for collecting generic text (think name, address
 ```html
 <form action="index.php" method="post">
 
-<label for="mytext">
-    Enter something here:
-</label>
-<input type="text" id="mytext">
+  <label for="mytext">Enter something here:</label>
+  <input type="text" id="mytext">
 
 </form>
 ```
@@ -62,9 +60,8 @@ Doesn't look different from the text field on a desktop, but on most mobile devi
 ```html
 <form action="index.php" method="post">
 
-<label for="mytel">
-Phone number:</label>
-<input type="tel" id="mytel">
+  <label for="mytel">Phone number:</label>
+  <input type="tel" id="mytel">
 
 </form>
 ```
@@ -80,9 +77,8 @@ Doesn't look different from the text field on a desktop, but on most mobile devi
 ```html
 <form action="index.php" method="post">
 
-<label for="myemail">
-Email address:</label>
-<input type="email" id="myemail">
+  <label for="myemail">Email address:</label>
+  <input type="email" id="myemail">
 
 </form>
 ```
@@ -102,9 +98,8 @@ Many people are still using JavaScript solutions for entering dates for these re
 ```html
 <form action="index.php" method="post">
 
-<label for="mydate">
-Pick a date:</label>
-<input type="date" id="mydate">
+  <label for="mydate">Pick a date:</label>
+  <input type="date" id="mydate">
 
 </form>
 ```
@@ -123,9 +118,8 @@ Attributes:
 ```html
 <form action="index.php" method="post">
 
-<label for="myqty">
-How many do you want:</label>
-<input type="number" id="myqty" min="1" max="10">
+  <label for="myqty">How many do you want:</label>
+  <input type="number" id="myqty" min="1" max="10">
 
 </form>
 ```
@@ -187,8 +181,8 @@ A large box for extended comments.
 ```html
 <form action="index.php" method="post">
 
-<label for="comments">Special requests:</label>
-<textarea id="comments"></textarea>
+  <label for="comments">Special requests:</label>
+  <textarea id="comments"></textarea>
 
 </form>
 ```
@@ -204,12 +198,11 @@ Example: a list of states, a list of sizes, etc.
 ```html
 <form action="index.php" method="post">
 
-<label for="pietype">
-What kind of pie would you like?</label>
-<select id="pietype">
+  <label for="pietype">What kind of pie would you like?</label>
+  <select id="pietype">
     <option value="apple">Apple</option>
     <option value="cherry">Cherry</option>
-</select>
+  </select>
 
 </form>
 ```
@@ -228,11 +221,10 @@ See above examples.
 
 - Dive into HTML5 Forms [http://diveinto.html5doctor.com/forms.html](http://diveinto.html5doctor.com/forms.html)
 - Form reference [https://htmlreference.io/forms/](https://htmlreference.io/forms/)
-- Mozilla Developer Network: HTML forms tutorial [https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
-- Tutorial: Your first HTML form [https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
-- InternetingIsHard.com
-  - Forms [https://internetingishard.com/html-and-css/forms](https://internetingishard.com/html-and-css/forms)
-  - Web Typography [https://internetingishard.com/html-and-css/web-typography/](https://internetingishard.com/html-and-css/web-typography/)
+- Mozilla Developer Network HTML forms tutorial [https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
+- Mozilla Developer Network  Tutorial: Your first HTML form [https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)   
+- InternetingIsHard.com Forms [https://internetingishard.com/html-and-css/forms](https://internetingishard.com/html-and-css/forms)
+- InternetingIsHard.com Web Typography [https://internetingishard.com/html-and-css/web-typography/](https://internetingishard.com/html-and-css/web-typography/)
 - Google Fonts [http://fonts.google.com](http://fonts.google.com)
 
 ## Exercises
