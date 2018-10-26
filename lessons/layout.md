@@ -6,7 +6,7 @@ path: "/layout"
 
 ## Together in class
 
-Let's explore the box model, including padding, border, margin, width, and height, as well as the display:inline and display: block properties, using this CodePen link:
+Let's explore the box model, including `padding`, `border`, `margin`, `width`, and `height`, as well as the `display:inline` and `display: block` properties, using this CodePen link:
 
 https://codepen.io/jen4web/pen/JmweGL?editors=1100
 
@@ -233,12 +233,13 @@ p.example-height {
 
 ### `display`
 
-HTML tags have two methods of display by default: block and inline.
+HTML tags have two methods of display by default: block and inline. Every HTML tag is assigned one of these values.
 
 There are other values for this property which we will discuss today, including flex and inline-block.
 
-display: block;
-display: flex;
+`display: block;`
+
+`display: flex;`
 
 ## [Shorthand](http://css.maxdesign.com.au/selectutorial/rules_shorthand.htm)
 
@@ -475,7 +476,7 @@ If you don't want to use the default width, then assign the `flex-basis` propert
 ```html
 <style>
     article {
-        flex-basis: 25%;
+        flex-basis: 33%;
     }
 </style>
 ```
