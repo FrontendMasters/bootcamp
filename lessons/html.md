@@ -216,18 +216,15 @@ http://validator.w3.org/
 
 ### Mark up a book chapter
 
-Clicking <a href="../exercises/book%20excerpt.txt" download>book excerpt.txt</a> should save the file your "Downloads" folder (If not, use "File" -> "Save as...").
+Go to this page: https://github.com/FrontendMasters/bootcamp/blob/master/static/exercises/1-html/book%20excerpt.txt
 
-This is the first chapter of a book published in 1922 and which is now out of copyright.
+Copy out the text that is posted there. This is the first chapter of a book published in 1922 and which is now out of copyright.
 
-Reformat this document in HTML, marking up anything you think relevant,
-based on the tags you learned earlier today. Note that in some places,
-I\'ve called for emphasis, while there\'s a link in another place.
+Reformat this document in HTML, marking up anything you think relevant, based on the tags you learned earlier today. Note that in some places, I\'ve called for emphasis, while there\'s a link in another place.
 
 ## Additional HTML practice
 
-If you finish early, and/or you want some more practice, work through
-the following sections of exercises at W3Schools:
+If you finish early, and/or you want some more practice, work through the following sections of exercises at W3Schools:
 
 https://www.w3schools.com/html/exercise.asp
 
@@ -247,14 +244,11 @@ https://www.w3schools.com/html/exercise.asp
 
 ### On Your Own
 
-Once you've finished the above work, start creating an "about" page
-that's all about you. In this page, include the following:
+Once you've finished the above work, start creating an "about" page that's all about you. In this page, include the following:
 
-- A paragraph of information about who you are, where you live, and
-  what you currently do for work
+- A paragraph of information about who you are, where you live, and what you currently do for work
 
-- Another paragraph describing what you'd like to do in web design
-  and development
+- Another paragraph describing what you'd like to do in web design and development
 
 - Make a list of three important things to know about you
 
@@ -271,18 +265,13 @@ activities. Include:
 
 - How does it make you feel?
 
-- Where have you traveled because of your hobby? What other life
-  experiences has your hobby provided, that you might not otherwise
+- Where have you traveled because of your hobby? What other life experiences has your hobby provided, that you might not otherwise
   experience?
 
 - Photos and/or videos of your hobby in action
 
-- Links to websites describing your hobby, or where hobbyists discuss
-  what they do
+- Links to websites describing your hobby, or where hobbyists discuss what they do
 
-If you manage to get as far as creating both web pages, link them
-together with a navigation bar.
+If you manage to get as far as creating both web pages, link them together with a navigation bar.
 
-As always, do not be concerned with how these pages look. They are Ugly
-Web Pages&trade;! Be sure to use the right HTML tags to communicate what
-the content is about, not what you think is pretty.
+As always, do not be concerned with how these pages look. They are Ugly Web Pages&trade;! Be sure to use the right HTML tags to communicate what the content is about, not what you think is pretty.
