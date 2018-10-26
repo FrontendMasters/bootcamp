@@ -6,6 +6,11 @@ path: "/github"
 
 ## GitHub Pages, Calculator
 
+### Today's Files
+
+Today's files are found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github
+
+
 ### Together in class
 
 We will work on getting your website up online today using GitHub Pages and the GitHub Desktop application. We will then work on a calculator layout that you'll program with JavaScript next week.
