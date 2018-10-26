@@ -1,5 +1,7 @@
 html {
     box-sizing: border-box;
+    background: black;
+    color: #fdfcfb;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -8,7 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Kavivanar', cursive;
+    font-family:  'Raleway', sans-serif;
     font-weight: normal;
 }
 h2 {
@@ -17,11 +19,14 @@ h2 {
     margin: 0;
 }
 a {
-    color: #DA0090;
+    color: #901108;
     text-decoration: none;
+    transform: scale(0.7);
+    transition: 0.4s ease-in;
 }
 a:hover {
     text-decoration: underline;
+     transform: scale(0.9);
 }
 .wrapper {
     width: 80%;
@@ -47,15 +52,19 @@ article::after {
 }
 .rightheader h1 {
     margin: 0;
-    color: #DA0090;
+    color: #901108;
+    margin-bottom: 1px;
     font-size: 3em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-style: normal;
 }
 .rightheader p {
     margin-top: -0.5rem;
 }
 nav {
-    border-bottom: 1px solid #A61F11;
-    border-top: 1px solid #DA0090;
+    border-bottom: 2px solid #A61F11;
+    border-top: 1px solid #901108;
 }
 nav ul {
     margin: 0;
@@ -89,7 +98,7 @@ article img {
     color: #89A611;
 }
 section {
-    border-bottom: 1px solid #DA0090;
+    border-bottom: 2px solid #901108;
     margin-bottom: 0.3rem;
 }
 footer {
