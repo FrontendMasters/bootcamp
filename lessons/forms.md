@@ -6,6 +6,10 @@ path: "/forms"
 
 ## Forms, Web Fonts, and More
 
+### Today's Files
+
+Today's files are found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/4-forms
+
 ### Together in class
 
 We will spend lots of time discussing forms today. We'll create a form in class that will submit to a server and emails you the results of what was typed in the form.
