@@ -119,6 +119,15 @@ You may want to keep making changes to your website, and you want to keep publis
 - Click the button on the top right, which might now read "fetch origin" -- but it still does the same thing.
 - Check to see your changes in the browser.
 
+## Calculator exercise
+
+Download the calculator exercise files, including the beginning state, ending state, instructions, and specification for how the calculator should look: 
+
+https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github
+
+We will code the calculator together in class, based on the specifications given in the exercise.
+
+
 ## References
 
 - GitHub [http://www.github.com](http://www.github.com)
