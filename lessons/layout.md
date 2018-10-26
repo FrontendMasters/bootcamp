@@ -3,6 +3,9 @@ order: 4
 title: "Layout"
 path: "/layout"
 ---
+## Today's Files
+
+Found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout
 
 ## Together in class
 
