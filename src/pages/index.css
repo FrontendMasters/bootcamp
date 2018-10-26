@@ -1,5 +1,35 @@
 body {
-  background-color: #eee;
+  /* background-image: url(/layout/TreeBG.png); */
+  background-image: url(/layout/Scratch_texture.png), linear-gradient(#59726a, #b2c4be);
+  background-repeat: repeat, no-repeat;
+  background-size: 300px 200px, 100% 100%;
+  background-color: #b2c4be;
+  position: relative;
+  min-height: 100%;
+}
+
+#pageBGFooter{
+  background-image: url(/layout/TreeBG.png);
+  background-position: bottom;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  Height: 40%; 
+  z-index: -1;
+}
+
+.BootcampHero {
+  background-image: url(/layout/logoBurst.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 580px;
+  width: 100%;
+}
+
+#pgBackground {
+
 }
 
 .index {

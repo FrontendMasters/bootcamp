@@ -11,7 +11,7 @@ import "./index.css";
 const TemplateWrapper = props => (
   <StaticQuery
     render={data => (
-      <div>
+      <div id="pgBackground">
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -25,12 +25,12 @@ const TemplateWrapper = props => (
             }
           ]}
         />
-        <div className="navbar navbar-light gradient">
+        <div className="navbar navbar-light transparent">
           <Link to="/" className="navbar-brand">
-            {data.site.siteMetadata.title}
+            <img src="/layout/fm-vector-optimized.svg"></img><h2>BootCamp</h2>
           </Link>
         </div>
-        <div className="main">{props.children}</div>
+        <div className="main">{props.children}</div><div id="pageBGFooter"></div>
       </div>
     )}
     query={graphql`
