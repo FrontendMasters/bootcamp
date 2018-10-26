@@ -217,6 +217,59 @@ Depending on application, may have a for attribute. The for attribute is set to 
 
 See above examples.
 
+## Web Fonts
+
+Web fonts are fonts that come from the web, rather than from the computer in front of you.
+
+So far, we've called for fonts like this:
+```html
+<style>
+  body {
+     font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
+```
+This asks for the Arial font first. If Arial (more common on PCs) isn't on the computer, then try for Helvetica (more common on Mac). If neither is available, then try the generic sans-serif font. That generic font is determined by your browser.
+
+Wouldn't it be nice to have access to other fonts? That's where web fonts come in.
+
+Web fonts may cost money, or they might be free. There are several places to get a web font, but two places in most common use include Google Fonts and FontAwesome.
+
+Google Fonts https://fonts.google.com/ will let you pick your own fonts and assign them to your web page. Don't pick too many, though, or they will slow down the loading time of your web page -- very bad for mobile phone service especially!
+
+FontAwesome Free https://fontawesome.com/free has over 1000 icons that are useful for web pages, including social media icons, arrows, credit cards, documents, and so much more. 
+
+Web fonts are included on your page in two steps. Both pieces of code should be provided by the font provider.
+
+1. Link to the web font in the head of your HTML document. The font provider will give you the code to use, so the font is imported to your page.
+
+2. In your CSS, call the correct `font-family` name, so the font will appear on your page.
+
+For example, if you're using the Google font called Mali, you should include this code in the `<head>` of your document: 
+
+`<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">`
+
+When calling the font in CSS, it should be called this way:
+
+```html
+<style>
+  h1, h2, h3 {
+    font-family: 'Mali', cursive;
+  }
+</style>
+```
+You will need to create your own selector for where you'd like the web font to appear.
+
+## Embedding maps, videos, social media feeds, and more
+
+YouTube, Twitter, Facebook, Google Maps... so many places to get such great content! You can embed this content into your HTML web page via the `<embed>` or `<iframe>` tag.
+
+Any of these services will provide HTML code for you for what you want to share. Look for a link for sharing or embedding the information and copy the HTML. For example, this code will display a Google map of Minneapolis:
+
+```html
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90325.28539613367!2d-93.33151812543683!3d44.97079704339309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b333909377bbbd%3A0x939fc9842f7aee07!2sMinneapolis%2C+MN!5e0!3m2!1sen!2sus!4v1540581288890" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+```
+
 ## References
 
 - Dive into HTML5 Forms [http://diveinto.html5doctor.com/forms.html](http://diveinto.html5doctor.com/forms.html)
