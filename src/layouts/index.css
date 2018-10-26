@@ -1,9 +1,12 @@
 @font-face {
-  font-family: 'PosterizerKGRough';
-  src: url('/layout/37DE85_0_0.eot');
-  src: url('/layout/37DE85_0_0.eot?#iefix') format('embedded-opentype'),url('/layout/37DE85_0_0.woff2') format('woff2'),url('/layout/37DE85_0_0.woff') format('woff'),url('/layout/37DE85_0_0.ttf') format('truetype');
+  font-family: "PosterizerKGRough";
+  src: url("/layout/37DE85_0_0.eot");
+  src: url("/layout/37DE85_0_0.eot?#iefix") format("embedded-opentype"),
+    url("/layout/37DE85_0_0.woff2") format("woff2"),
+    url("/layout/37DE85_0_0.woff") format("woff"),
+    url("/layout/37DE85_0_0.ttf") format("truetype");
 }
- 
+
 .transparent {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -15,18 +18,31 @@
   z-index: 10;
 }
 
-.navbar img {
-  float: left;
+.navbar-brand {
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar .logo {
+  display: inline-block;
+  line-height: 100%;
+  padding: 5px 0;
+  margin: 0 15px;
+}
+
+.navbar .logo img {
   width: 224px;
-  margin: 0px 16px 0px 20px;
 }
 
 .navbar h2 {
-  float: left;
-  margin: 5px 0px 0px 0px;
+  justify-content: flex-end;
+  display: inline-block;
   color: #979898;
   text-transform: none;
-  font-family: 'PosterizerKGRough', 'Courier New', Courier, monospace;
+  font-family: "PosterizerKGRough", "Courier New", Courier, monospace;
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
 }
 
 .jumbotron.gradient {
@@ -61,16 +77,16 @@
   box-shadow: 0px 10px rgba(36, 40, 39, 0.5);
 }
 
-.lesson h1{
+.lesson h1 {
   color: #923a21;
   font-size: 52px;
-  font-family: 'PosterizerKGRough', 'Courier New', Courier, monospace;
+  font-family: "PosterizerKGRough", "Courier New", Courier, monospace;
   padding: 20px 12px 6px 12px;
 }
 
-.lesson h2{
+.lesson h2 {
   color: #42352c;
-  font-family: 'PosterizerKGRough', 'Courier New', Courier, monospace;
+  font-family: "PosterizerKGRough", "Courier New", Courier, monospace;
   padding: 20px 0px 0px 0px;
 }
 

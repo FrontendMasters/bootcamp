@@ -27,10 +27,14 @@ const TemplateWrapper = props => (
         />
         <div className="navbar navbar-light transparent">
           <Link to="/" className="navbar-brand">
-            <img src="/layout/fm-vector-optimized.svg"></img><h2>BootCamp</h2>
+            <span class="logo">
+              <img src="/layout/fm-vector-optimized.svg" />
+            </span>
+            <h2>BootCamp</h2>
           </Link>
         </div>
-        <div className="main">{props.children}</div><div id="pageBGFooter"></div>
+        <div className="main">{props.children}</div>
+        <div id="pageBGFooter" />
       </div>
     )}
     query={graphql`

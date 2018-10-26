@@ -5,13 +5,13 @@
   background-color: white;
   background-image: url(/layout/postIT_bg.png);
   background-size: 60px;
-  box-shadow: 0px 10px rgba(28, 71, 57, 0.5);
+  box-shadow: 0px 10px rgba(69, 207, 161, 0.5);
 }
 
 .lesson-title {
   font-size: 32px;
   padding: 25px 30px 2px 30px;
-  font-family: 'PosterizerKGRough', 'Courier New', Courier, monospace;
+  font-family: "PosterizerKGRough", "Courier New", Courier, monospace;
   color: #2c2825;
   text-align: center;
 }
