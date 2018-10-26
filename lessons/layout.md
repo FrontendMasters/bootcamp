@@ -3,6 +3,7 @@ order: 4
 title: "Layout"
 path: "/layout"
 ---
+
 ## Today's Files
 
 Found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout
@@ -12,8 +13,6 @@ Found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercise
 Let's explore the box model, including `padding`, `border`, `margin`, `width`, and `height`, as well as the `display:inline` and `display: block` properties, using this CodePen link:
 
 https://codepen.io/jen4web/pen/JmweGL?editors=1100
-
-
 
 ![Box model](./images/css-boxmodel.png)
 
@@ -333,6 +332,7 @@ p.example-shorthand4 {
 
 <p class="example-shorthand4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
+
 ## Box model types
 
 ### Content box model
@@ -347,7 +347,7 @@ Content box model is what is used by default by CSS. In the case of the content 
 
 ### Border box model
 
-The border box model says something different about the `width` property. It says that `width` is the total width of the border, padding, and the content. Any margin present is *not* included in the `width` property.
+The border box model says something different about the `width` property. It says that `width` is the total width of the border, padding, and the content. Any margin present is _not_ included in the `width` property.
 
 ![Border box model](./images/borderbox2.png)
 
@@ -362,8 +362,8 @@ html {
     box-sizing: inherit;
 }
 </style>
-
 ```
+
 The first declaration sets the `<html>` tag to the border box model. However, this property is not inherited. The second declaration says for everything in the universe (`*`) and everything before it (`*:before`) and everything after it (`*:after`), inherit the border box model declaration. You can place this at the top of every CSS document you write going forward!
 
 Read more about that formula here: https://www.paulirish.com/2012/box-sizing-border-box-ftw/
@@ -414,6 +414,7 @@ Values include `left`, `right`, `both`
 <p class="p-float1">Lorem ipsum </p>
 <p class="p-clear2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
+
 There are other methods to clear as well. A popular one is to self-clear the parent using this formula:
 
 ```html
@@ -425,6 +426,7 @@ There are other methods to clear as well. A popular one is to self-clear the par
 }
 </style>
 ```
+
 Read more about clearing: https://css-tricks.com/snippets/css/clear-fix/
 
 ## Styling navigation bars in a horizontal and vertical direction
@@ -435,7 +437,7 @@ For our vertical navigation bar, we'll turn off the bullets in the list, then st
 
 Vertical navigation bars: https://codepen.io/jen4web/pen/xymQoM
 
-For our horizontal navigation bar, we'll make our unordered list go vertically on the page using `display: inline-block;`. 
+For our horizontal navigation bar, we'll make our unordered list go vertically on the page using `display: inline-block;`.
 
 Horizontal navigation bars: https://codepen.io/jen4web/pen/OBrrLR
 
@@ -443,26 +445,27 @@ Horizontal navigation bars: https://codepen.io/jen4web/pen/OBrrLR
 
 Flexbox is a new way of managing the layout of web pages. It has become extremely popular and useful in the last 2 years. Flexbox itself would take an entire day to explain well, so we are going to focus on just a few properties you'll need to make simple layouts. You can find much more about Flexbox at Frontend Masters: https://frontendmasters.com/courses/css-grids-flexbox/
 
-To make flexbox work, you need two HTML tags that have a parent-child relationship. These are called the *flex container* (parent) and the *flex item* (child). Example:
+To make flexbox work, you need two HTML tags that have a parent-child relationship. These are called the _flex container_ (parent) and the _flex item_ (child). Example:
 
 ```html
 <div class="parent">
     <p class="child">The paragraph is the child, or flex item, while the div is the parent, or flex container.</p>
 </div>
 ```
+
 To get started with flexbox, set the display property on the flex container: `display: flex;`
 
 ### Flex container properties
+
 `flex-flow` will set up the direction of flexbox and some behaviors. There are two values specified for `flex-flow`. The first is the `flex-direction`. This is typically set to `row` or `column`.
 
-The second value is the `flex-wrap`. This specifies whether the boxes should wrap to another row/column or not. Typical values are `wrap` or `nowrap`. 
+The second value is the `flex-wrap`. This specifies whether the boxes should wrap to another row/column or not. Typical values are `wrap` or `nowrap`.
 
 One other property that might be useful is `justify-content`. Do you want all of the boxes pushed to the beginning of the row (`flex-start`), the end of the row (`flex-end`), centered (`center`), or have any extra space distributed across the row (`space-around`)?
 
-
 ```html
 <style>
-    div {
+    div.flex {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -478,18 +481,20 @@ If you don't want to use the default width, then assign the `flex-basis` propert
 
 ```html
 <style>
-    article {
+    article.flex {
         flex-basis: 33%;
     }
 </style>
+<article class="flex"></article>
+<article class="flex"></article>
+<article class="flex"></article>
 ```
 
 **Why not `width`?**
 
-The `width` property means to make something a certain width -- period! If it's 25%, it will never be 24.99% or 25.01%. 
+The `width` property means to make something a certain width -- period! If it's 25%, it will never be 24.99% or 25.01%.
 
 The `flex-basis` property, however, is more flexible. It says to make the width 25%, but a little more or less than that is OK too.
-
 
 ## References
 
@@ -518,6 +523,7 @@ The `flex-basis` property, however, is more flexible. It says to make the width 
 - Floats [https://internetingishard.com/html-and-css/floats/](https://internetingishard.com/html-and-css/floats/)
 
 ### Flexbox References
+
 - Flexbox Froggy, a game for learning flexbox http://flexboxfroggy.com/
 - Flexbox Defense, another Flexbox game http://www.flexboxdefense.com/
 - A complete guide to Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -529,10 +535,11 @@ The `flex-basis` property, however, is more flexible. It says to make the width 
 ### Code a blog page
 
 I've given you some images and a picture of a web page layout. You have everything you need to lay this page out as a blog page. Can you figure out how to code this? To complete the layout, you will need:
-* Think about borders, margin, and padding to make the page pretty.
-* Think about horizontal nav bars for styling the top navigation. How about the bottom alien social media links?
-* Consider floats for arranging images and text.
-* Consider flexbox for making the header work correctly.
+
+- Think about borders, margin, and padding to make the page pretty.
+- Think about horizontal nav bars for styling the top navigation. How about the bottom alien social media links?
+- Consider floats for arranging images and text.
+- Consider flexbox for making the header work correctly.
 
 Work on this first, and ask questions in Slack. I'll address questions in the afternoon.
 

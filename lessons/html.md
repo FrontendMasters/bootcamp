@@ -40,7 +40,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
 
-### Unordered list `<ul></ul>` 
+### Unordered list `<ul></ul>`
 
 Unordered list (often called a "bullet list" - but remember, there's no formatting in HTML!)
 
@@ -72,7 +72,8 @@ _Always_ nested inside a `<ul>` or `<ol>` tag!
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
 
-### Ordered list `<ol></ol>` 
+### Ordered list `<ol></ol>`
+
 Used for lists where the order is important (like a list of instructions). Often called a "number list" - but remember there's no formatting in HTML!
 
 _Always_ contains `<li>` tags!
@@ -153,7 +154,7 @@ src = image source (a file path to the image)
 alt = alternative text. Displays if the image does not. Read by search engines and screen readers. It should fully describe the image, so you could imagine what the image looked like if you could not see it.
 
 ```html
-<img src="../jens-files/images/blog1.jpg" alt="A friendly, smiling alien.">
+<img src="../jens-files/1-html/images/blog1.jpg" alt="A friendly, smiling alien.">
 ```
 
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img
@@ -175,6 +176,7 @@ An item is emphasized relative to surrounding text. Text is generally rendered i
 ```html
 <p>You simply <em>must</em> try this new coffee shop!</p>
 ```
+
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
 
 ### What is the difference between `<strong>` and `<em>` ?
