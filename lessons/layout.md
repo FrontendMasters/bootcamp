@@ -91,7 +91,7 @@ Size can be the same on 4 sides, or different sizes such as `border-radius: 20px
 - padding-bottom
 - padding-left
 
-Padding is the distance between the content and the border.
+Padding is the distance between the content and the border. **Padding values must always be positive.**
 
 ```html
 <style>
@@ -150,7 +150,7 @@ See "shorthand" below for understanding values.
 - margin-bottom
 - margin-left
 
-Margin is the area outside of the border.
+Margin is the area outside of the border. **Margin values may be positive or negative.**
 
 ```html
 <style>
@@ -337,15 +337,15 @@ There are two box model types that you will encounter in CSS: the content box mo
 
 Content box model is what is used by default by CSS. In the case of the content box model, the `width` property in CSS refers to the width of the content. To determine the total width of the box, add together the value of `width`, plus any left and/or right `padding`, `margin`, and `border` that may be present.
 
-(./images/contentbox1.png)
+![Content box model](./images/contentbox1.png)
 
-*If the type of box model is not declared at the top of the CSS document, you may assume you're working with the content box model.*
+**If the type of box model is not declared at the top of the CSS document, you may assume you're working with the content box model.**
 
 ### Border box model
 
 The border box model says something different about the `width` property. It says that `width` is the total width of the border, padding, and the content. Any margin present is *not* included in the `width` property.
 
-(./images/borderbox2.png)
+![Border box model](./images/borderbox2.png)
 
 You must declare, in your CSS document, that you are working with the border box model. The best way to do this is as follows:
 
@@ -437,8 +437,54 @@ Horizontal navigation bars: https://codepen.io/jen4web/pen/OBrrLR
 
 ## Introducing Flexbox
 
-Flexbox is a new way of managing the layout of web pages. It has become extremely popular and useful in the last 2 years.
+Flexbox is a new way of managing the layout of web pages. It has become extremely popular and useful in the last 2 years. Flexbox itself would take an entire day to explain well, so we are going to focus on just a few properties you'll need to make simple layouts. You can find much more about Flexbox at Frontend Masters: https://frontendmasters.com/courses/css-grids-flexbox/
 
+To make flexbox work, you need two HTML tags that have a parent-child relationship. These are called the *flex container* (parent) and the *flex item* (child). Example:
+
+```html
+<div class="parent">
+    <p class="child">The paragraph is the child, or flex item, while the div is the parent, or flex container.</p>
+</div>
+```
+To get started with flexbox, set the display property on the flex container: `display: flex;`
+
+### Flex container properties
+`flex-flow` will set up the direction of flexbox and some behaviors. There are two values specified for `flex-flow`. The first is the `flex-direction`. This is typically set to `row` or `column`.
+
+The second value is the `flex-wrap`. This specifies whether the boxes should wrap to another row/column or not. Typical values are `wrap` or `nowrap`. 
+
+One other property that might be useful is `justify-content`. Do you want all of the boxes pushed to the beginning of the row (`flex-start`), the end of the row (`flex-end`), centered (`center`), or have any extra space distributed across the row (`space-around`)?
+
+
+```html
+<style>
+    div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+</style>
+```
+
+### Flex item properties
+
+By default in flexbox, if you decide to set up a row of boxes, all boxes will have the same width by default. So if you decide to have a row (a flex container) containing 4 children (or flex items), each child will be 25% wide.
+
+If you don't want to use the default width, then assign the `flex-basis` property to the flex item. This number should be a percentage, if you choose to use it.
+
+```html
+<style>
+    article {
+        flex-basis: 25%;
+    }
+</style>
+```
+
+**Why not `width`?**
+
+The `width` property means to make something a certain width -- period! If it's 25%, it will never be 24.99% or 25.01%. 
+
+The `flex-basis` property, however, is more flexible. It says to make the width 25%, but a little more or less than that is OK too.
 
 
 ## References
@@ -467,6 +513,13 @@ Flexbox is a new way of managing the layout of web pages. It has become extremel
 - The Box Model [https://internetingishard.com/html-and-css/css-box-model/](https://internetingishard.com/html-and-css/css-box-model/)
 - Floats [https://internetingishard.com/html-and-css/floats/](https://internetingishard.com/html-and-css/floats/)
 
+### Flexbox References
+- Flexbox Froggy, a game for learning flexbox http://flexboxfroggy.com/
+- Flexbox Defense, another Flexbox game http://www.flexboxdefense.com/
+- A complete guide to Flexbox https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- MDN CSS Flexible Box Layout https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+- Almost complete guide to flexbox (without flexbox) https://kyusuf.com/post/almost-complete-guide-to-flexbox-without-flexbox
+
 ## Exercises
 
 ### Code a blog page
@@ -486,8 +539,6 @@ I've given you some worksheets that have you calculate the width of the content 
 ### Finish the book chapter
 
 Once again, visit your book chapter. Choose some images and include them, floating them in place. (Don't forget to clear!) Consider including some quotes, or navigation to subheads.
-
-
 
 ### Additional CSS practice
 
