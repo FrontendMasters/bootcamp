@@ -329,6 +329,40 @@ p.example-shorthand4 {
 
 <p class="example-shorthand4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
+## Box model types
+
+### Content box model
+
+There are two box model types that you will encounter in CSS: the content box model, and the border box model.
+
+Content box model is what is used by default by CSS. In the case of the content box model, the `width` property in CSS refers to the width of the content. To determine the total width of the box, add together the value of `width`, plus any left and/or right `padding`, `margin`, and `border` that may be present.
+
+(./images/contentbox1.png)
+
+*If the type of box model is not declared at the top of the CSS document, you may assume you're working with the content box model.*
+
+### Border box model
+
+The border box model says something different about the `width` property. It says that `width` is the total width of the border, padding, and the content. Any margin present is *not* included in the `width` property.
+
+(./images/borderbox2.png)
+
+You must declare, in your CSS document, that you are working with the border box model. The best way to do this is as follows:
+
+```html
+<style>
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+</style>
+
+```
+The first declaration sets the `<html>` tag to the border box model. However, this property is not inherited. The second declaration says for everything in the universe (`*`) and everything before it (`*:before`) and everything after it (`*:after`), inherit the border box model declaration. You can place this at the top of every CSS document you write going forward!
+
+Read more about that formula here: https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 
 ## Understanding Floats and Clears
 
@@ -401,6 +435,11 @@ For our horizontal navigation bar, we'll make our unordered list go vertically o
 
 Horizontal navigation bars: https://codepen.io/jen4web/pen/OBrrLR
 
+## Introducing Flexbox
+
+Flexbox is a new way of managing the layout of web pages. It has become extremely popular and useful in the last 2 years.
+
+
 
 ## References
 
@@ -430,6 +469,16 @@ Horizontal navigation bars: https://codepen.io/jen4web/pen/OBrrLR
 
 ## Exercises
 
+### Code a blog page
+
+I've given you some images and a picture of a web page layout. You have everything you need to lay this page out as a blog page. Can you figure out how to code this? To complete the layout, you will need:
+* Think about borders, margin, and padding to make the page pretty.
+* Think about horizontal nav bars for styling the top navigation. How about the bottom alien social media links?
+* Consider floats for arranging images and text.
+* Consider flexbox for making the header work correctly.
+
+Work on this first, and ask questions in Slack. I'll address questions in the afternoon.
+
 ### Box model worksheets
 
 I've given you some worksheets that have you calculate the width of the content and the total width of the area, based on either the content box model or the border box model. Work through the math and check your answers, provided separately. Ask questions if you have them!
@@ -438,9 +487,7 @@ I've given you some worksheets that have you calculate the width of the content 
 
 Once again, visit your book chapter. Choose some images and include them, floating them in place. (Don't forget to clear!) Consider including some quotes, or navigation to subheads.
 
-### Code a blog page
 
-I've given you some images and a picture of a web page layout. You have everything you need to lay this page out as a blog page. Can you figure out how to code this?
 
 ### Additional CSS practice
 
