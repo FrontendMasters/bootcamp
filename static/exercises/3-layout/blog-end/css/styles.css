@@ -27,21 +27,18 @@ a:hover {
     width: 80%;
     margin: 0 auto;
 }
-header::after,
-article::after {
-        content: "";
-        display: table;
-        clear: both;
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 .leftheader {
-    float: left;
-    width: 50%;
+    flex-basis: 40%;
     text-align: right;
     padding-right: 0.5rem;
 }
 .rightheader {
-    float: left;
-    width: 50%;
+    flex-basis: 60%;
     margin-top: 3.75rem;
     padding-left: 0.5rem;
 }
@@ -76,6 +73,12 @@ nav a:hover {
     background-color: black;
     color: #84DE37
 }
+section {
+    border-bottom: 1px solid #DA0090;
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
 article {
     margin: 2rem 0;
 }
@@ -84,13 +87,14 @@ article img {
     margin: 0 1rem 1rem 0;
     border-radius: 1rem;
 }
+article::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 .posted {
     font-size: 0.8rem;
     color: #89A611;
-}
-section {
-    border-bottom: 1px solid #DA0090;
-    margin-bottom: 0.3rem;
 }
 footer {
     padding: 1rem 0 3rem 0;

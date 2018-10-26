@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-	<link href="forms-end.css" rel="stylesheet">
+	<title>Alien Abduction Order Form</title>
+	<link href="css/forms-end.css" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
+		<section>
 		<h1>Alien Abduction Order Form</h1>
 		<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
 		<form>
@@ -44,26 +45,36 @@
 						<input type="radio" name="ufotype" value="any"> Whatever is in the neighborhood
 					</label>
 
-				<label for="abtype">What type of abduction experience do you want?</label>
-					<select id="abtype">
-						<option selected>Select one...</option>
-						<option value="tour">Tour of the solar system</option>
-						<option value="dinner">Alien dinner and discussion</option>
-						<option value="dance">Alien dance lessons</option>
-						<option value="whales">Whale watching</option>
-					</select>
+					<label for="abtype">What type of abduction experience do you want?</label>
+						<select id="abtype">
+							<option selected>Select one...</option>
+							<option value="tour">Tour of the solar system</option>
+							<option value="dinner">Alien dinner and discussion</option>
+							<option value="dance">Alien dance lessons</option>
+							<option value="whales">Whale watching</option>
+						</select>
 
-				<label for="comments">Special requests:</label>
-					<textarea id="comments"></textarea>
+					<label for="comments">Special requests:</label>
+						<textarea id="comments"></textarea>
 
-				<label>
-					<input id="subscribe" type="checkbox" value="subscribe">Add me to your email list
-				</label>				
+					<label>
+						<input id="subscribe" type="checkbox" value="subscribe">Add me to your email list
+					</label>				
 
-				<button type="submit">Submit</button>
-			</fieldset>
-		</form>
-
+					<button type="submit">Submit</button>
+				</fieldset>
+			</form>
+		</section>
+		<aside>
+			<h3>Our Location</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1411.1614370128507!2d-93.27191134226143!3d44.977751763344614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3329a75fc44b3%3A0xab6d15df00205abb!2s60+South+6th+St%2C+Minneapolis%2C+MN+55402!5e0!3m2!1sen!2sus!4v1540308714418" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<address>
+					Frontend Masters &middot;
+					60 South 6th Street &middot;
+					Suite 3625 &middot;
+					Minneapolis, MN 55402
+				</address>
+		</aside>
 	</div>
 </body>
 </html>
