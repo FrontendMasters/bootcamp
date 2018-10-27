@@ -1,10 +1,14 @@
 @font-face {
   font-family: "PosterizerKGRough";
-  src: url("/layout/37DE85_0_0.eot");
-  src: url("/layout/37DE85_0_0.eot?#iefix") format("embedded-opentype"),
-    url("/layout/37DE85_0_0.woff2") format("woff2"),
-    url("/layout/37DE85_0_0.woff") format("woff"),
-    url("/layout/37DE85_0_0.ttf") format("truetype");
+  src: url("https://frontendmasters.github.io/bootcamp/layout/37DE85_0_0.eot");
+  src: url("https://frontendmasters.github.io/bootcamp/layout/37DE85_0_0.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://frontendmasters.github.io/bootcamp/layout/37DE85_0_0.woff2")
+      format("woff2"),
+    url("https://frontendmasters.github.io/bootcamp/layout/37DE85_0_0.woff")
+      format("woff"),
+    url("https://frontendmasters.github.io/bootcamp/layout/37DE85_0_0.ttf")
+      format("truetype");
 }
 
 .transparent {
