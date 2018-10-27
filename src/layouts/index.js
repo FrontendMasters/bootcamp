@@ -28,7 +28,7 @@ const TemplateWrapper = props => (
         <div className="navbar navbar-light transparent">
           <Link to="/" className="navbar-brand">
             <span class="logo">
-              <img src="/layout/fm-vector-optimized.svg" />
+              <img src="https://frontendmasters.github.io/bootcamp/layout/fm-vector-optimized.svg" />
             </span>
             <h2>BootCamp</h2>
           </Link>

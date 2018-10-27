@@ -3,7 +3,7 @@
   margin: 0;
   overflow: hidden;
   background-color: white;
-  background-image: url(/layout/postIT_bg.png);
+  background-image: url(https://frontendmasters.github.io/bootcamp/layout/postIT_bg.png);
   background-size: 60px;
   box-shadow: 0px 10px rgba(69, 207, 161, 0.5);
 }

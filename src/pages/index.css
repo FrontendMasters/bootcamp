@@ -1,6 +1,6 @@
 body {
   /* background-image: url(/layout/TreeBG.png); */
-  background-image: url(/layout/Scratch_texture.png),
+  background-image: url(https://frontendmasters.github.io/bootcamp/layout/Scratch_texture.png),
     linear-gradient(#59726a, #b2c4be);
   background-repeat: repeat, no-repeat;
   background-size: 300px 200px, 100% 100%;
@@ -14,7 +14,7 @@ body {
 }
 
 #pageBGFooter {
-  background-image: url(/layout/TreeBG.png);
+  background-image: url(https://frontendmasters.github.io/bootcamp/layout/TreeBG.png);
   background-position: top;
   bottom: 0;
   left: 0;
@@ -26,7 +26,7 @@ body {
 }
 
 .BootcampHero {
-  background-image: url(/layout/logoBurst.png);
+  background-image: url(https://frontendmasters.github.io/bootcamp/layout/logoBurst.png);
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 300px;
