@@ -182,6 +182,7 @@ section h5 {
 ```
 
 Note that this is NOT the same as the above selector. This says "make all `h4`'s in sections have a black background, and make ALL `h5`'s have a black background."
+
 ```
 section h4,
 h5 {
@@ -274,8 +275,8 @@ Text color.
 ```html
 <style>
 p.example-color {
-    background-color: grey;
-    color: pink;
+    background-color: #42352c;
+    color: #d74f25;
 }
 </style>
 
@@ -298,7 +299,7 @@ By default, background images repeat.
 ```html
 <style>
 p.example-background1 {
-    background-color: blue;
+    background-color: #d74f25;
 }
 </style>
 
@@ -310,7 +311,7 @@ While `background: red url(image.jpg) no-repeat left top;` means a background co
 ```html
 <style>
 p.example-background2 {
-    background: red url(https://placekitten.com/g/200/300) no-repeat left top;
+    background: #d74f25 url(https://placekitten.com/g/200/300) no-repeat left top;
     height: 10rem;
 }
 </style>
@@ -328,12 +329,15 @@ Values include `none`, `underline`.
 
 ```html
 <style>
+a.padding {
+    padding: initial;
+}
 a.example-textdecoration {
     text-decoration: none;
 }
 </style>
 
-<p>The quick brown <a class="example-textdecoration" href="https://www.youtube.com/watch?v=jofNR_WkoCE">fox jumps</a> over the <a href="https://giphy.com/gifs/cheezburger-dog-dogs-FdWU4HtO5vTGw">lazy dog</a>.</p>
+<p>The quick brown <a class="example-textdecoration padding" href="https://www.youtube.com/watch?v=jofNR_WkoCE">fox jumps</a> over the <a class="padding" href="https://giphy.com/gifs/cheezburger-dog-dogs-FdWU4HtO5vTGw">lazy dog</a>.</p>
 ```
 
 ### Link Pseudo-classes
@@ -358,27 +362,28 @@ The pseudo-classes `:focus` and `:hover` are used with links and with any other 
 
 ```html
 <style>
+a.padding {
+    padding: initial;
+}
 a.example:link, {
-    color: #cccccc;
+    color: #d74f25;
 }
 a.example:visited, {
-    color: #0000ff;
+    color: #e7e6d2;
 }
 a.example:focus {
     border: 1px dotted black;
 }
 a.example:hover {
-    color: #ff6666;
+    color: #c02d28;
 }
 a.example:active, {
-    color: #333333;
+    color: #e7e6d2;
 }
 </style>
 
-<p>The quick brown <a class="example" href="https://www.youtube.com/watch?v=jofNR_WkoCE">fox jumps</a> over the <a href="https://giphy.com/gifs/cheezburger-dog-dogs-FdWU4HtO5vTGw">lazy dog</a>.</p>
+<p>The quick brown <a class="example padding" href="https://www.youtube.com/watch?v=jofNR_WkoCE">fox jumps</a> over the <a class="example2 padding" href="https://giphy.com/gifs/cheezburger-dog-dogs-FdWU4HtO5vTGw">lazy dog</a>.</p>
 ```
-
-
 
 ## References
 
