@@ -39,7 +39,7 @@ Shorthand: `border: 1px solid red;`
 .border1 {
     border-width: 5px;
     border-style: solid;
-    border-color: red;
+    border-color: #c02d28;
 }
 </style>
 
@@ -64,7 +64,7 @@ Creates rounded corners. Specify a large radius to make pills or circles.
 ```html
 <style>
 .borderradius {
-    border: 2px solid black;
+    border: 2px solid #42352c;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -78,7 +78,7 @@ Size can be the same on 4 sides, or different sizes such as `border-radius: 20px
 ```html
 <style>
 .borderradius2 {
-    border: 2px solid black;
+    border: 2px solid #42352c;
     border-radius: 100px;
 }
 </style>
@@ -99,7 +99,7 @@ Padding is the distance between the content and the border. **Padding values mus
 <style>
 p.padding1 {
     padding: 20px;
-    background-color: blue;
+    background-color: #d74f25;
     color: white;
 }
 </style>
@@ -111,7 +111,7 @@ p.padding1 {
 <style>
 p.padding2 {
     padding: 10px 30px;
-    background-color: blue;
+    background-color: #d74f25;
     color: white;
 }
 </style>
@@ -123,7 +123,7 @@ p.padding2 {
 <style>
 p.padding3 {
     padding: 5% 0 20px 1rem;
-    background-color: blue;
+    background-color: #d74f25;
     color: white;
 }
 </style>
@@ -135,7 +135,7 @@ p.padding3 {
 <style>
 p.padding4 {
     padding-left: 15px;
-    background-color: blue;
+    background-color: #d74f25;
     color: white;
 }
 </style>
@@ -158,7 +158,7 @@ Margin is the area outside of the border. **Margin values may be positive or neg
 <style>
 p.margin1 {
     margin: 20px;
-    background-color: blue;
+    background-color: #d74f25;
     color: white;
 }
 </style>
@@ -170,7 +170,7 @@ p.margin1 {
 <style>
 p.margin2 {
     margin: 10px 30px;
-    background-color: blue;
+    background-color: #d74f25;
     color: white;
 }
 </style>
@@ -182,7 +182,7 @@ p.margin2 {
 <style>
 p.margin3 {
     margin: 5% 0 20px 1rem;
-    background-color: blue;
+    background-color: #d74f25;
     color: white;
 }
 </style>
@@ -194,7 +194,7 @@ p.margin3 {
 <style>
 p.margin4 {
     margin-left: 15px;
-    background-color: blue;
+    background-color: #d74f25;
     color: white;
 }
 </style>
@@ -226,7 +226,7 @@ The height of a particular element. In general, use of height is to be avoided o
 <style>
 p.example-height {
     height: 12rem;
-    background: blue;
+    background-color: #d74f25;
 }
 </style>
 
@@ -287,7 +287,7 @@ A shorthand declaration typically contains 1-4 values. For example, the rule bel
 <style>
 p.example-shorthand1 {
     padding: 5em;
-    background-color: blue;
+    background-color: #d74f25;
 }
 </style>
 
@@ -300,7 +300,7 @@ This declaration will apply 1em of padding to the top and bottom, and 5em of pad
 <style>
 p.example-shorthand2 {
     padding: 1em 5em;
-    background-color: blue;
+    background-color: #d74f25;
 }
 </style>
 
@@ -313,7 +313,7 @@ This declaration will apply 1em of padding to the top, 3em of padding to the lef
 <style>
 p.example-shorthand3 {
     padding: 1em 3em 5em;
-    background-color: blue;
+    background-color: #d74f25;
 }
 </style>
 
@@ -326,7 +326,7 @@ This declaration will apply 1em of padding to the top, 3em of padding to the rig
 <style>
 p.example-shorthand4 {
     padding: 1em 3em 5em 7em;
-    background-color: blue;
+    background-color: #d74f25;
 }
 </style>
 
@@ -351,9 +351,36 @@ The border box model says something different about the `width` property. It say
 
 ![Border box model](./images/borderbox2.png)
 
-You must declare, in your CSS document, that you are working with the border box model. The best way to do this is as follows:
+You must declare, in your CSS document, that you are working with the border box model.
 
 ```html
+<style>
+.parent {
+    width: 200px;
+    box-sizing: border-box;
+    border: 5px solid #7c8e88;
+}
+
+.child {
+    box-sizing: content-box;
+    // box-sizing: border-box;
+    border: 10px solid #d74f25;
+    padding: 10px;
+    width: 100%;
+}
+</style>
+
+<section class="parent">
+    <p>Parent element</p>
+    <section class="child">
+        Child element
+    </section>
+</section>
+```
+
+The best way to apply a consistent box model throughout a web page is do use this code as follows:
+
+```
 <style>
 html {
     box-sizing: border-box;
@@ -398,21 +425,30 @@ Values include `left`, `right`, `both`
 
 ```html
 <style>
-.p-float1 {
+p.p-clear-right {
     float: left;
-    width: 200px;
     height: 75px;
-    margin: 20px;
-    border: 5px solid blue;
+    border: 5px solid #7c8e88;
+    width: 35%;
+    clear: none;
 }
-.p-clear2 {
-    border: 4px solid red;
-    clear: left;
+p.p-clear-left {
+    float: right;
+    width: 65%;
+    border: 4px solid #d74f25;
+    clear: none;
+}
+p.p-footer {
+    border: 4px solid #d74f25;
+    width: 100%;
+    clear: none;
+    // clear: both;
 }
 </style>
 
-<p class="p-float1">Lorem ipsum </p>
-<p class="p-clear2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+<p class="p-clear-right">Lorem ipsum </p>
+<p class="p-clear-left">Ut enim ad minim veniam</p>
+<p class="p-footer">This is a footer. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
 
 There are other methods to clear as well. A popular one is to self-clear the parent using this formula:
@@ -420,11 +456,29 @@ There are other methods to clear as well. A popular one is to self-clear the par
 ```html
 <style>
 .group:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    // clear: both;
 }
+p.p-float5 {
+    float: left;
+    width: 66%;
+    height: 75px;
+    border: 5px solid #7c8e88;
+    clear: none;
+}
+p.p-noclear {
+    clear: none;
+}
+
 </style>
+
+<section class="group">
+<p class="p-float5">Lorem ipsum </p>
+<p class="p-float5">Lorem ipsum </p>
+<p class="p-float5">Lorem ipsum </p>
+</section>
+<p class="p-noclear">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
 ```
 
 Read more about clearing: https://css-tricks.com/snippets/css/clear-fix/
@@ -448,8 +502,19 @@ Flexbox is a new way of managing the layout of web pages. It has become extremel
 To make flexbox work, you need two HTML tags that have a parent-child relationship. These are called the _flex container_ (parent) and the _flex item_ (child). Example:
 
 ```html
-<div class="parent">
-    <p class="child">The paragraph is the child, or flex item, while the div is the parent, or flex container.</p>
+<style>
+div.parent-flex {
+    border: 5px solid #7c8e88;
+    padding: 10px;
+}
+p.child-flex {
+    border: 5px solid #7c8e88;
+    padding: 10px;
+}
+</style>
+
+<div class="parent-flex">
+    <p class="child-flex">The paragraph is the child, or flex item, while the div is the parent, or flex container.</p>
 </div>
 ```
 
@@ -465,12 +530,26 @@ One other property that might be useful is `justify-content`. Do you want all of
 
 ```html
 <style>
-    div.flex {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-around;
-    }
+div.parent-flex2 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	border: 5px solid #42352c;
+}
+p.child-flex2 {
+	border: 5px solid #c02d28;
+	background-color: #e7e6d2;
+}
 </style>
+
+<div class="parent-flex2">
+    <p class="child-flex2">1</p>
+    <p class="child-flex2">2</p>
+    <p class="child-flex2">3</p>
+    <p class="child-flex2">4</p>
+    <p class="child-flex2">5</p>
+    <p class="child-flex2">6</p>
+</div>
 ```
 
 ### Flex item properties
@@ -481,13 +560,27 @@ If you don't want to use the default width, then assign the `flex-basis` propert
 
 ```html
 <style>
-    article.flex {
-        flex-basis: 33%;
-    }
+div.parent-flex3 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	border: 5px solid #42352c;
+}
+p.child-flex3 {
+	flex-basis: 10%;
+	border: 5px solid #c02d28;
+	background-color: #e7e6d2;
+}
 </style>
-<article class="flex"></article>
-<article class="flex"></article>
-<article class="flex"></article>
+
+<div class="parent-flex3">
+    <p class="child-flex3">1</p>
+    <p class="child-flex3">2</p>
+    <p class="child-flex3">3</p>
+    <p class="child-flex3">4</p>
+    <p class="child-flex3">5</p>
+    <p class="child-flex3">6</p>
+</div>
 ```
 
 **Why not `width`?**
