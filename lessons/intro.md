@@ -3,13 +3,14 @@ order: 0
 title: "Introduction to the Course"
 path: "/intro"
 ---
-From Brian Holt and Jen Kramer, instructors:
 
-We are excited to teach you the basics of web development, including HTML, CSS, and some JavaScript. In this course we assume you know absolutely nothing about writing code. 
+From Jen Kramer and Brian Holt, your instructors:
+
+We are excited to teach you the basics of web development, including HTML, CSS, and some JavaScript. In this course we assume you know absolutely nothing about writing code.
 
 Because this is a short course, we are not able to cover everything about HTML, CSS, JavaScript, and web development exhaustively. Our goal is to teach you just enough to determine whether this kind of work for you. Do you enjoy it? Is it interesting?
 
-If so, you'll be ready to dig into all of the resources the Internet offers, learning more on your own. **Completing this course will not prepare you to be a professional web developer.** You will need more practice with these concepts and more education. However, this course is an excellent start towards that goal. 
+If so, you'll be ready to dig into all of the resources the Internet offers, learning more on your own. **Completing this course will not fully prepare you to be a professional web developer.** You will need more practice with these concepts and more education. However, this course is an excellent start towards that goal.
 
 ## Prerequisites
 
@@ -30,6 +31,29 @@ Don't try to understand every piece all at once. There are times where it's okay
 Lastly, this isn't a get-rich-quick scheme. Learning to code is hard and requires a lot of hard work. While entry-level jobs are out there, and you can get them with months of work, we guarantee you you'll have to work hard for them.
 
 ## Who Are We?
+
+### Jen Kramer, Lecturer at Harvard University Extension School
+
+![Jen Kramer](./images/jen.jpg)
+
+I'm Jen Kramer. I teach the web!
+
+For most of my 18 year career, I've been a freelancer. I lived in the backwoods of Vermont and built websites for interesting people. I ran a small web design firm in New Hampshire and built websites for interesting companies. Now I live in the Boston suburbs, and while I build fewer sites than I used to do, I do still occasionally put together sites for a good cause.
+
+Throughout, I've also been a teacher. I taught academically: community college, undergraduates, and graduate students. I taught commercially: LinkedIn Learning/Lynda.com, Frontend Masters, osTraining, and O'Reilly, creating over 35 video training courses. I taught dozens of workshops for corporations and at conferences. I've presented at a conference every six weeks, on average, for the last ten years. And I've written 3 books -- currently working on #4.
+
+Most of my teaching focuses on the continuum from concept for a website through coding the front end. That includes topics like user experience (UX), user interface design (UI), HTML, CSS, responsive design, content management systems like Joomla and WordPress, project management, web marketing and branding, web semantics, web analytics, and accessibility.
+
+In all my years of teaching, my favorite audience is the beginning beginners -- in other words, people just like you. You are the most difficult audience, because concepts professionals have long taken for granted are brand new and fresh for you. Everything needs to be explained exactly. In explaining, I learn what I didn't know in enough detail before. It is here that the habits of an entire career are formed. It is here, I believe, that I can most influence the web and where it's going.
+
+[frontend-masters]: https://frontendmasters.com/teachers/jen-kramer/
+[twitter]: https://twitter.com/jen4web
+[facebook]: https://www.facebook.com/webdesignjen/
+[github]: https://github.com/jen4web
+[linkedin]: https://www.linkedin.com/in/jen4web/
+[slideshare]: https://www.slideshare.net/jen4web
+
+### Brian Holt, Cloud Developer Advocate at Microsoft
 
 ![Brian drinking a beer](./images/brian.jpg)
 
@@ -57,29 +81,8 @@ Unfortunately life gets in the way. These courses take dozens of hours to prepar
 [github]: https://github.com/btholt
 [linkedin]: https://www.linkedin.com/in/btholt/
 
-![Jen Kramer](./images/jen.jpg)
-
-I'm Jen Kramer. I'm a Lecturer at Harvard University Extension School. I teach the web!
-
-For most of my 18 year career, I've been a freelancer. I lived in the backwoods of Vermont and built websites for interesting people. I ran a small web design firm in New Hampshire and built websites for interesting companies. Now I live in the Boston suburbs, and while I build fewer sites than I used to do, I do still occasionally put together sites for a good cause.
-
-Throughout, I've also been a teacher. I taught academically: community college, undergraduates, and graduate students. I taught commercially: LinkedIn Learning/Lynda.com, Frontend Masters, osTraining, and O'Reilly, creating over 35 video training courses. I taught dozens of workshops for corporations and at conferences. I've presented at a conference every six weeks, on average, for the last ten years. And I've written 3 books -- currently working on #4.
-
-Most of my teaching focuses on the continuum from concept for a website through coding the front end. That includes topics like user experience (UX), user interface design (UI), HTML, CSS, responsive design, content management systems like Joomla and WordPress, project management, web marketing and branding, web semantics, web analytics, and accessibility. 
-
-In all my years of teaching, my favorite audience is the beginning beginners -- in other words, people just like you. You are the most difficult audience, because concepts professionals have long taken for granted are brand new and fresh for you. Everything needs to be explained exactly. In explaining, I learn what I didn't know in enough detail before. It is here that the habits of an entire career are formed. It is here, I believe, that I can most influence the web and where it's going. 
-
-[frontend-masters]: https://frontendmasters.com/teachers/jen-kramer/
-[twitter]: https://twitter.com/jen4web
-[facebook]: https://www.facebook.com/webdesignjen/
-[github]: https://github.com/jen4web
-[linkedin]: https://www.linkedin.com/in/jen4web/
-[slideshare]: https://www.slideshare.net/jen4web
-
 ## Why was this course created?
 
 ![Frontend Masters Logo](./images/FrontendMastersLogo.png)
 
 Frontend Masters sponsored this bootcamp as a service to their community. They have long been the leader in advanced front-end web development courses, well-respected by the professional community. However, increasingly, they were contacted by beginners, attracted to the high quality of the courses, but without the background to adequately take advantage of the material.
-
-
