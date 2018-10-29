@@ -306,7 +306,7 @@ p.example-background1 {
 <p class="example-background1">The quick brown fox jumps over the lazy dog.</p>
 ```
 
-While `background: lightblue url(image.jpg) no-repeat left top;` means a background color of red, background image of `image.jpg`, display it once at the left top corner, no repeat of the image.
+While `background: lightblue url(image.jpg) no-repeat left top;` means a background color of light blue, background image of `image.jpg`, display it once at the left top corner, no repeat of the image.
 
 ```html
 <style>
