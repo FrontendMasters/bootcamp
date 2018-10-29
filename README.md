@@ -1,7 +1,5 @@
 # Frontend Masters Bootcamp 🏕
 
-&nbsp;
-
 ### More information about the bootcamp: https://frontendmasters.com/bootcamp/
 ### Course website: https://frontendmasters.github.io/bootcamp/
 
