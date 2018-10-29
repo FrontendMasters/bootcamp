@@ -294,24 +294,24 @@ Dealing with background images and colors. `background` property is shorthand fo
 
 By default, background images repeat.
 
-`background-color: blue;` sets the background to blue.
+`background-color: lightblue;` sets the background to lightblue.
 
 ```html
 <style>
 p.example-background1 {
-    background-color: #d74f25;
+    background-color: lightblue;
 }
 </style>
 
 <p class="example-background1">The quick brown fox jumps over the lazy dog.</p>
 ```
 
-While `background: red url(image.jpg) no-repeat left top;` means a background color of red, background image of `image.jpg`, display it once at the left top corner, no repeat of the image.
+While `background: lightblue url(image.jpg) no-repeat left top;` means a background color of red, background image of `image.jpg`, display it once at the left top corner, no repeat of the image.
 
 ```html
 <style>
 p.example-background2 {
-    background: #d74f25 url(https://placekitten.com/g/200/300) no-repeat left top;
+    background: lightblue url(https://placekitten.com/g/200/300) no-repeat left top;
     height: 10rem;
 }
 </style>
