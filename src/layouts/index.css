@@ -73,7 +73,7 @@
   margin: auto;
   margin-top: 80px;
   margin-bottom: 40px;
-  padding: 15px 35px 25px;
+  padding: 20px 40px 25px;
   background-color: #fff;
   overflow: scroll;
   width: 80%;
@@ -85,13 +85,13 @@
   color: #923a21;
   font-size: 52px;
   font-family: "PosterizerKGRough", "Courier New", Courier, monospace;
-  padding: 20px 12px 6px 12px;
+  padding: 20px 12px 6px 0;
 }
 
 .lesson h2 {
   color: #42352c;
   font-family: "PosterizerKGRough", "Courier New", Courier, monospace;
-  padding: 20px 0px 0px 0px;
+  padding: 10px 0px 0px 0px;
 }
 
 .lesson p {
@@ -121,9 +121,11 @@
 
 .klipse-result {
   border: 1px solid #90b4fe;
-  padding-top: 8px;
+  padding-top: 10px;
+  padding-left: 10px;
   position: relative;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .klipse-result .CodeMirror-wrap {
@@ -132,7 +134,8 @@
 }
 
 .klipse-result::before {
-  content: "result";
+  content: "Result";
+  font-weight: bold;
   background-color: white;
   position: absolute;
   top: -13px;

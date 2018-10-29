@@ -196,13 +196,13 @@ h5 {
 
 Establishes the font family/families. Standard choices include:
 
-- **`sans-serif`**: Arial, Helvetica, Trebuchet MS, Verdana
-- **`serif`**: Times, Times New Roman, Georgia
-- **`monospace`**: Courier
+- **sans-serif**: `Arial, Helvetica, Trebuchet MS, Verdana`
+- **serif**: `Times, Times New Roman, Georgia`
+- **monospace**: `Courier`
 
 ```html
 <style>
-p.example-family { font-family: Arial, Helvetica, sans-serif; }
+p.example-family { font-family: Courier; }
 </style>
 
 <p class="example-family">The quick brown fox jumps over the lazy dog.</p>
@@ -275,7 +275,6 @@ Text color.
 ```html
 <style>
 p.example-color {
-    background-color: #42352c;
     color: #d74f25;
 }
 </style>
@@ -311,8 +310,8 @@ While `background: lightblue url(image.jpg) no-repeat left top;` means a backgro
 ```html
 <style>
 p.example-background2 {
-    background: lightblue url(https://placekitten.com/g/200/300) no-repeat left top;
-    height: 10rem;
+    background: lightblue url(http://placepuppy.net/300/300) no-repeat left top;
+    height: 300px;
 }
 </style>
 
@@ -362,27 +361,25 @@ The pseudo-classes `:focus` and `:hover` are used with links and with any other 
 
 ```html
 <style>
-a.padding {
-    padding: initial;
-}
-a.example:link, {
-    color: #d74f25;
-}
-a.example:visited, {
-    color: #e7e6d2;
-}
-a.example:focus {
-    border: 1px dotted black;
-}
-a.example:hover {
+a.example:link {
     color: #c02d28;
 }
-a.example:active, {
-    color: #e7e6d2;
+a.example:visited {
+    color: blue;
+}
+a.example:focus {
+    border: 3px dotted black;
+}
+a.example:hover {
+    color: purple;
+    font-weight: bold;
+}
+a.example:active {
+    color: #7c8e88;
 }
 </style>
 
-<p>The quick brown <a class="example padding" href="https://www.youtube.com/watch?v=jofNR_WkoCE">fox jumps</a> over the <a class="example2 padding" href="https://giphy.com/gifs/cheezburger-dog-dogs-FdWU4HtO5vTGw">lazy dog</a>.</p>
+<p>The quick brown <a class="example" href="https://www.youtube.com/watch?v=jofNR_WkoCE">fox jumps</a> over the <a class="example" href="https://giphy.com/gifs/cheezburger-dog-dogs-FdWU4HtO5vTGw">lazy dog</a>.</p>
 ```
 
 ## References

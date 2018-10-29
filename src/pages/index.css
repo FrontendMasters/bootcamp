@@ -42,7 +42,8 @@ body {
   margin-top: 20px;
 }
 
-.index .jumbotron {
+.lesson h3 {
+  padding: 20px 0 10px;
 }
 
 .example-table {
@@ -73,9 +74,6 @@ body {
 
 .example-table .w {
   border-left-color: transparent;
-}
-
-.lesson-content table {
 }
 
 .lesson-content td {

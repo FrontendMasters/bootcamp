@@ -17,11 +17,11 @@
 }
 
 .lesson-content {
-  padding: 0 15px 15px 15px;
+  padding: 0 15px 15px 0;
   color: #2c2825;
 }
 
 .lesson-content a {
   color: #923a21;
-  padding-left: 5px;
+  padding-left: 0;
 }

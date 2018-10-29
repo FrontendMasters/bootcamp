@@ -34,7 +34,6 @@ export default function Template(props) {
     <div className="lesson-container">
       <div className="lesson">
         <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
         <div
           className="lesson-content"
           dangerouslySetInnerHTML={{ __html: html }}
