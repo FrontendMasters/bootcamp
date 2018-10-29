@@ -6,17 +6,9 @@ path: "/forms"
 
 ## Forms, Web Fonts, and More
 
-### Today's Files
+### Lesson Files
 
-Today's files are found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/4-forms
-
-### Together in class
-
-We will spend lots of time discussing forms today. We'll create a form in class that will submit to a server and emails you the results of what was typed in the form.
-
-We will also look at web fonts, a way of expanding your type choices for your website.
-
-Finally, we'll look at additional functionality to include in your web pages, like YouTube videos, Facebook or Twitter feeds, Google maps, and so forth.
+The files for this lesson are found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/4-forms
 
 ### `<form></form>`
 
@@ -175,7 +167,6 @@ Attributes:
 </form>
 ```
 
-
 ### `<textarea></textarea>`
 
 A large box for extended comments.
@@ -226,6 +217,7 @@ See above examples.
 Web fonts are fonts that come from the web, rather than from the computer in front of you.
 
 So far, we've called for fonts like this:
+
 ```html
 <style>
   body {
@@ -233,6 +225,7 @@ So far, we've called for fonts like this:
   }
 </style>
 ```
+
 This asks for the Arial font first. If Arial (more common on PCs) isn't on the computer, then try for Helvetica (more common on Mac). If neither is available, then try the generic sans-serif font. That generic font is determined by your browser.
 
 Wouldn't it be nice to have access to other fonts? That's where web fonts come in.
@@ -241,7 +234,7 @@ Web fonts may cost money, or they might be free. There are several places to get
 
 Google Fonts https://fonts.google.com/ will let you pick your own fonts and assign them to your web page. Don't pick too many, though, or they will slow down the loading time of your web page -- very bad for mobile phone service especially!
 
-FontAwesome Free https://fontawesome.com/free has over 1000 icons that are useful for web pages, including social media icons, arrows, credit cards, documents, and so much more. 
+FontAwesome Free https://fontawesome.com/free has over 1000 icons that are useful for web pages, including social media icons, arrows, credit cards, documents, and so much more.
 
 Web fonts are included on your page in two steps. Both pieces of code should be provided by the font provider.
 
@@ -249,7 +242,7 @@ Web fonts are included on your page in two steps. Both pieces of code should be 
 
 2. In your CSS, call the correct `font-family` name, so the font will appear on your page.
 
-For example, if you're using the Google font called Mali, you should include this code in the `<head>` of your document: 
+For example, if you're using the Google font called Mali, you should include this code in the `<head>` of your document:
 
 `<link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">`
 
@@ -257,11 +250,14 @@ When calling the font in CSS, it should be called this way:
 
 ```html
 <style>
-  h1, h2, h3 {
+  h3.example-customfont {
     font-family: 'Mali', cursive;
   }
 </style>
+
+<h3 class="example-customfont">The quick brown fox jumped over the stump.</h3>
 ```
+
 You will need to create your own selector for where you'd like the web font to appear.
 
 ## Embedding maps, videos, social media feeds, and more
@@ -279,7 +275,7 @@ Any of these services will provide HTML code for you for what you want to share.
 - Dive into HTML5 Forms [http://diveinto.html5doctor.com/forms.html](http://diveinto.html5doctor.com/forms.html)
 - Form reference [https://htmlreference.io/forms/](https://htmlreference.io/forms/)
 - Mozilla Developer Network HTML forms tutorial [https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
-- Mozilla Developer Network  Tutorial: Your first HTML form [https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)   
+- Mozilla Developer Network Tutorial: Your first HTML form [https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form)
 - InternetingIsHard.com Forms [https://internetingishard.com/html-and-css/forms](https://internetingishard.com/html-and-css/forms)
 - InternetingIsHard.com Web Typography [https://internetingishard.com/html-and-css/web-typography/](https://internetingishard.com/html-and-css/web-typography/)
 - Google Fonts [http://fonts.google.com](http://fonts.google.com)
@@ -291,6 +287,7 @@ Any of these services will provide HTML code for you for what you want to share.
 Whew, we have done a LOT this week! If you want to spend time reviewing, making new pages, or working on exercises, this is a great time to do that.
 
 ### Plan your portfolio
+
 Spend some time planning your portfolio. You will be creating this over the weekend and posting it to your GitHub site (which we will create tomorrow).
 
 Consider reusing the about and contact pages we already created, and maybe the book chapter would make a good artifact to display.

@@ -222,7 +222,7 @@ Go to this page: https://github.com/FrontendMasters/bootcamp/blob/master/static/
 
 Copy out the text that is posted there. This is the first chapter of a book published in 1922 and which is now out of copyright.
 
-Reformat this document in HTML, marking up anything you think relevant, based on the tags you learned earlier today. Note that in some places, I\'ve called for emphasis, while there\'s a link in another place.
+Reformat this document in HTML, marking up anything you think relevant, based on the tags you learned. Note that in some places, I\'ve called for emphasis, while there\'s a link in another place.
 
 ## Additional HTML practice
 

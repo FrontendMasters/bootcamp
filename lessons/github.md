@@ -6,14 +6,9 @@ path: "/github"
 
 ## GitHub Pages, Calculator
 
-### Today's Files
+### Exercise Files
 
-Today's files are found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github
-
-
-### Together in class
-
-We will work on getting your website up online today using GitHub Pages and the GitHub Desktop application. We will then work on a calculator layout that you'll program with JavaScript next week.
+Files are found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github
 
 ### Getting web pages online
 
@@ -126,12 +121,11 @@ You may want to keep making changes to your website, and you want to keep publis
 
 ## Calculator exercise
 
-Download the calculator exercise files, including the beginning state, ending state, instructions, and specification for how the calculator should look: 
+Download the calculator exercise files, including the beginning state, ending state, instructions, and specification for how the calculator should look:
 
 https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github
 
 We will code the calculator together in class, based on the specifications given in the exercise.
-
 
 ## References
 

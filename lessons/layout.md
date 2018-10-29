@@ -4,13 +4,13 @@ title: "Layout"
 path: "/layout"
 ---
 
-## Today's Files
+## Layout Lesson Files
 
 Found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout
 
-## Together in class
+## Demo
 
-Let's explore the box model, including `padding`, `border`, `margin`, `width`, and `height`, as well as the `display:inline` and `display: block` properties, using this CodePen link:
+Explore the box model, including `padding`, `border`, `margin`, `width`, and `height`, as well as the `display:inline` and `display: block` properties, using this CodePen link:
 
 https://codepen.io/jen4web/pen/JmweGL?editors=1100
 
@@ -237,7 +237,7 @@ p.example-height {
 
 HTML tags have two methods of display by default: block and inline. Every HTML tag is assigned one of these values.
 
-There are other values for this property which we will discuss today, including flex and inline-block.
+There are other values for this property including `flex` and `inline-block`.
 
 `display: block;`
 
