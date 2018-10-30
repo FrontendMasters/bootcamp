@@ -406,6 +406,10 @@ a.example:active {
 
 [http://color.adobe.com/](http://color.adobe.com/)
 
+**Colorzilla, for choosing colors from your website**
+
+[http://www.colorzilla.com/](http://www.colorzilla.com/)
+
 ## Exercises
 
 ### Style your book chapter
