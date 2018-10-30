@@ -83,6 +83,14 @@
   animation: pooping 5s steps(10);
 }
 
+.fox.fox-pooped {
+  background-image: url(./pet/Pooping.png);
+  background-position: -1836px;
+  background-repeat: no-repeat;
+  width: 204px;
+  height: 202px;
+}
+
 @keyframes pooping {
   from {
     background-position: 0;
