@@ -73,12 +73,19 @@
   margin: auto;
   margin-top: 80px;
   margin-bottom: 40px;
-  padding: 20px 40px 25px;
+  padding: 20px 20px 25px;
   background-color: #fff;
   overflow: scroll;
-  width: 80%;
+  width: 92%;
   max-width: 1200px;
   box-shadow: 0px 10px rgba(36, 40, 39, 0.5);
+}
+
+@media (min-width: 680px) {
+  .lesson {
+    width: 80%;
+    padding: 20px 40px 25px;
+  }
 }
 
 .lesson h1 {
