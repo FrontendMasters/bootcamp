@@ -22,13 +22,7 @@
   z-index: 10;
 }
 
-.navbar-brand {
-  display: flex;
-  align-items: flex-end;
-}
-
 .navbar .logo {
-  display: inline-block;
   line-height: 100%;
   padding: 5px 0;
   margin: 0 15px;
@@ -39,14 +33,28 @@
 }
 
 .navbar h2 {
-  justify-content: flex-end;
-  display: inline-block;
   color: #979898;
   text-transform: none;
   font-family: "PosterizerKGRough", "Courier New", Courier, monospace;
   padding: 0;
   padding-top: 10px;
   margin: 0;
+  padding-left: 15px;
+}
+
+@media (min-width: 500px) {
+  .navbar-brand {
+    display: flex;
+    align-items: flex-end;
+  }
+  .navbar h2 {
+    padding-left: 0;
+    justify-content: flex-end;
+    display: inline-block;
+  }
+  .navbar .logo {
+    display: inline-block;
+  }
 }
 
 .jumbotron.gradient {
