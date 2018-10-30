@@ -5,7 +5,8 @@
   background-color: white;
   background-image: url(https://frontendmasters.github.io/bootcamp/layout/postIT_bg.png);
   background-size: 60px;
-  box-shadow: 0px 10px rgba(69, 207, 161, 0.5);
+  box-shadow: 0px 10px rgba(36, 40, 39, 0.5);
+  padding: 20px;
 }
 
 .lesson-title {
