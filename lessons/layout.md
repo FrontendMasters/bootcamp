@@ -359,7 +359,7 @@ You must declare, in your CSS document, that you are working with the border box
 
 .child {
     box-sizing: content-box;
-    // box-sizing: border-box;
+    /* box-sizing: border-box; */
     border: 10px solid #d74f25;
     padding: 10px;
     width: 100%;
@@ -438,7 +438,7 @@ p.p-footer {
     border: 4px solid #d74f25;
     width: 100%;
     clear: none;
-    // clear: both;
+    /* clear: both; */
 }
 </style>
 
@@ -454,7 +454,7 @@ There are other methods to clear as well. A popular one is to self-clear the par
 .group:after {
     content: "";
     display: table;
-    // clear: both;
+    /* clear: both; */
 }
 p.p-float5 {
     float: left;
