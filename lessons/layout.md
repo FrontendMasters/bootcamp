@@ -4,10 +4,6 @@ title: "Layout"
 path: "/layout"
 ---
 
-## Layout Lesson Files
-
-Found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout
-
 ## Demo
 
 Explore the box model, including `padding`, `border`, `margin`, `width`, and `height`, as well as the `display:inline` and `display: block` properties, using this CodePen link:
@@ -625,7 +621,13 @@ The `flex-basis` property, however, is more flexible. It says to make the width 
 
 ## Exercises
 
-### Code a blog page
+### Layout Lesson Files
+
+Files on Github https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout
+
+<a href="https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout.zip" download>Download ZIP of Files</a>
+
+### Code a Blog Page
 
 I've given you some images and a picture of a web page layout. You have everything you need to lay this page out as a blog page. Can you figure out how to code this? To complete the layout, you will need:
 
@@ -638,7 +640,7 @@ Work on this first, and ask questions in Slack. I'll address questions in the af
 
 Starting HTML, CSS, and images are here: https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout/blog-begin
 
-### Box model worksheets
+### Box Model Worksheets
 
 I've given you some worksheets that have you calculate the width of the content and the total width of the area, based on either the content box model or the border box model. Work through the math and check your answers, provided separately. Ask questions if you have them!
 
