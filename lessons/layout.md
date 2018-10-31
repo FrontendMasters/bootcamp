@@ -636,9 +636,14 @@ I've given you some images and a picture of a web page layout. You have everythi
 
 Work on this first, and ask questions in Slack. I'll address questions in the afternoon.
 
+Starting HTML, CSS, and images are here: https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout/blog-begin
+
 ### Box model worksheets
 
 I've given you some worksheets that have you calculate the width of the content and the total width of the area, based on either the content box model or the border box model. Work through the math and check your answers, provided separately. Ask questions if you have them!
+
+Worksheets found at:
+https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout/boxmodel
 
 ### Finish the book chapter
 
