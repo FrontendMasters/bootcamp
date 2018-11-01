@@ -236,7 +236,7 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden
 
 Brent, our fabulous backend developer, has given us a form script we can use with the form we just built. He has told us that the action for the form is `https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES` and we should use a method of `POST`.
 
-We'll also need to configure a hidden input field. Brett says that the name should be `send_to` and the value should be the email address you used to register for Bootcamp.
+We'll also need to configure a hidden input field. Brent says that the name should be `send_to` and the value should be the email address you used to register for Bootcamp.
 
 Think about the right way to include this information in your form. Refer to the notes above for help.
 
