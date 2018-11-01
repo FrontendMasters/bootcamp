@@ -11,7 +11,6 @@
 		<h1>Alien Abduction Order Form</h1>
 		<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
 		<form method="POST" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES">
-			<input type="hidden" value="jen@jenkramer.org">
 			<fieldset>
 				<legend>Your contact information</legend>
 				<label for="name">Your name </label>
@@ -61,10 +60,11 @@
 					<label>
 						<input id="subscribe" name="subscribe" type="checkbox" value="subscribe">Add me to your email list
 					</label>				
-
-					<button type="submit">Submit</button>
+					<input id="send_to" type="hidden" name="send_to" value="yourEmailHere">
+					<button type="button" onclick="sendData()">Submit</button>
 				</fieldset>
 			</form>
+
 		</section>
 		<aside>
 			<h3>Our Location</h3>
@@ -77,6 +77,7 @@
 				</address>
 		</aside>
 	</div>
+	<script src="js/forms.js"></script>
 </body>
 </html>
 
