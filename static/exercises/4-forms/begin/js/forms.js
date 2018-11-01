@@ -13,32 +13,32 @@ function sendData() {
   urlEncodedDataPairs.push(
     encodeURIComponent("name") +
       "=" +
-      encodeURIComponent(document.getElementById("name").value)
+      encodeURIComponent(form.querySelector("[name='name']").value)
   );
   urlEncodedDataPairs.push(
     encodeURIComponent("send_to") +
       "=" +
-      encodeURIComponent(document.getElementById("send_to").value)
+      encodeURIComponent(form.querySelector("[name='send_to']").value)
   );
   urlEncodedDataPairs.push(
     encodeURIComponent("email") +
       "=" +
-      encodeURIComponent(document.getElementById("email").value)
+      encodeURIComponent(form.querySelector("[name='email']").value)
   );
   urlEncodedDataPairs.push(
     encodeURIComponent("phone") +
       "=" +
-      encodeURIComponent(document.getElementById("phone").value)
+      encodeURIComponent(form.querySelector("[name='phone']").value)
   );
   urlEncodedDataPairs.push(
     encodeURIComponent("date") +
       "=" +
-      encodeURIComponent(document.getElementById("date").value)
+      encodeURIComponent(form.querySelector("[name='date']").value)
   );
   urlEncodedDataPairs.push(
     encodeURIComponent("qty") +
       "=" +
-      encodeURIComponent(document.getElementById("qty").value)
+      encodeURIComponent(form.querySelector("[name='qty']").value)
   );
 
   // radio buttons
@@ -61,12 +61,12 @@ function sendData() {
   urlEncodedDataPairs.push(
     encodeURIComponent("comments") +
       "=" +
-      encodeURIComponent(document.getElementById("comments").value)
+      encodeURIComponent(form.querySelector("[name='comments']").value)
   );
   urlEncodedDataPairs.push(
     encodeURIComponent("subscribe") +
       "=" +
-      encodeURIComponent(document.getElementById("subscribe").checked)
+      encodeURIComponent(form.querySelector("[name='subscribe']").checked)
   );
 
   // Combine the pairs into a single string and replace all %-encoded spaces to
