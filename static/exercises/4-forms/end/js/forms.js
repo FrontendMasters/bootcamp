@@ -52,7 +52,7 @@ function sendData() {
   }
 
   // dropdown menu
-  var dropdown = document.getElementById("abtype");
+  var dropdown = form.querySelector("[name='abtype']");
   urlEncodedDataPairs.push(
     encodeURIComponent("abtype") +
       "=" +
