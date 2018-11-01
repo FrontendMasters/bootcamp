@@ -212,6 +212,46 @@ Depending on application, may have a for attribute. The for attribute is set to 
 
 See above examples.
 
+
+### `<input type="hidden">`
+
+Hidden form fields are occasionally used with form processing scripts. They're an easy way to set a value important to the processing script, without editing the processing script itself.
+
+Your processing script developer will tell you what to use for ID, name, and value.
+
+Since hidden fields are not visible to the user, label tags are not required.
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden
+
+```html
+<form action="index.php" method="post">
+
+  <input type="hidden" id="myhidden" name="myhidden" value="myvalue">
+
+</form>
+```
+
+## Adding processing to our form
+
+Brent, our fabulous backend developer, has given us a form script we can use with the form we just built. He has told us that the action for the form is `https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES` and we should use a method of `POST`. 
+
+We'll also need to configure a hidden input field. Brett says that the name should be `send_to` and the value should be the email address you used to register for Bootcamp.
+
+Think about the right way to include this information in your form. Refer to the notes above for help.
+
+## Adding error checking to our form
+
+Lanie, our fabulous JavaScript developer, wrote a script for us to use for checking to make sure required fields are completed. It will also tell us that the form has successfully been submitted.
+
+Lanie says to use the script that was given to you in your files. To add this script, she says to put it in the bottom of your web page. You'll need to add this code: 
+
+```html
+
+<script src="js/forms.js"></script>
+
+```
+This will attach the form error checking JavaScript to your web page.
+
 ## Web Fonts
 
 Web fonts are fonts that come from the web, rather than from the computer in front of you.
