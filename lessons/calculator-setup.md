@@ -16,7 +16,7 @@ Download the calculator exercise files, including the beginning state, ending st
 
 https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github.zip
 
-We will work on creating a calculator for next week's work with JavaScript.
+We are focusing this lesson on creating the HTML and CSS for the caclulator. In a future lesson we will make it interactive with JavaScript.
 
 ### A few Things To Know About This Calculator:
 
