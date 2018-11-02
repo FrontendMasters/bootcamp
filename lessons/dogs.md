@@ -1,7 +1,7 @@
 ---
 title: "Exercise: Dog App"
 path: "/dogs"
-order: 16
+order: 17
 ---
 
 We're going to build a dog picture viewer using the [dog.ceo API][dogceo]. This project is going to allow users to select a breed from a drop down list and then display a random picture of that breed.
