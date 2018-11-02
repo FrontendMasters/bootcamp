@@ -1,10 +1,10 @@
 ---
 order: 7
-title: "Calulator HTML Exercise"
+title: "Calulator HTML & CSS Exercise"
 path: "/calculator-html"
 ---
 
-## Calculator Exercise
+## Calulator HTML & CSS Exercise
 
 Our goal is to create a calculator that looks exactly like this image:
 
