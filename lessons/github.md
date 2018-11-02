@@ -10,6 +10,8 @@ path: "/github"
 
 Files are found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github
 
+[Download ZIP of Files](https://github.com/FrontendMasters/bootcamp/blob/master/static/exercises/5-github.zip)
+
 ### Getting web pages online
 
 So far, the websites we've built have worked on the computer in front of us only. That's not much of a site if no one else can see it!
