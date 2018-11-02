@@ -4,9 +4,9 @@ title: "GitHub"
 path: "/github"
 ---
 
-## GitHub Pages, Calculator
+## GitHub Pages
 
-### Exercise Files
+### Getting Web Pages Online
 
 Files are found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github
 
@@ -121,14 +121,6 @@ You may want to keep making changes to your website, and you want to keep publis
 - Click the button on the top right, which might now read "fetch origin" -- but it still does the same thing.
 - Check to see your changes in the browser.
 
-## Calculator exercise
-
-Download the calculator exercise files, including the beginning state, ending state, instructions, and specification for how the calculator should look:
-
-https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github
-
-We will code the calculator together in class, based on the specifications given in the exercise.
-
 ## References
 
 - GitHub [http://www.github.com](http://www.github.com)
@@ -138,13 +130,7 @@ We will code the calculator together in class, based on the specifications given
 - How to Build an Impressive Portfolio When You're New to Tech
   [https://skillcrush.com/2015/03/12/impressive-tech-portfolio/](https://skillcrush.com/2015/03/12/impressive-tech-portfolio/)
 
-## Exercises
-
-### Catch up
-
-Whew, we have done a LOT this week! If you want to spend time reviewing, making new pages, or working on exercises, this is a great time to do that.
-
-### Build your portfolio
+## Your Portfolio Project
 
 When thinking about your portfolio, consider these business questions:
 
