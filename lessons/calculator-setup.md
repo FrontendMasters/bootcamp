@@ -10,7 +10,7 @@ Our goal is to create a calculator that looks exactly like this image:
 
 ![](https://frontendmasters.github.io/bootcamp/exercises/5-github/calculator-spec.png)
 
-### Calculator Exercise
+## Exercise Files
 
 Download the calculator exercise files, including the beginning state, ending state, instructions, and specification for how the calculator should look:
 
@@ -18,26 +18,30 @@ https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-githu
 
 We will work on creating a calculator for next week's work with JavaScript.
 
-A few things to know about this calculator:
+### A few Things To Know About This Calculator:
 
-- To get the symbols for math, you will need to look up their HTML codes. One place to do that is here:
+#### To Get Symbols for Math, You'll Need to Look Up Their HTML Codes
 
-https://www.toptal.com/designers/htmlarrows/math/
+One place to do that is here:
 
-https://www.toptal.com/designers/htmlarrows/arrows/
+[HTML Math Characters](https://www.toptal.com/designers/htmlarrows/math/)
 
-- The calculator buttons should be clickable. Next week, you'll program them. But for right now, somehow we need to code clickable buttons.
+[HTML Arrow Characters](https://www.toptal.com/designers/htmlarrows/arrows/)
 
-- Colors used in this design include:
+#### The Calculator Buttons Should Be Clickable
 
-* black: #000000
-* white: #ffffff
-* light grey: #d8d9db
-* buttons on hover: #ebebeb
-* button active state: #bbbcbe
-* function buttons: #df974c
-* function buttons on hover: #dfb07e
-* function button active state: #dd8d37
+You'll program them later in the course with JavaScript. But for right now, somehow we need to code clickable buttons.
+
+#### Colors used in this design include:
+
+- black: <span style="background:black;color:white;display:inline-block;padding:1px 5px;">#000000</span>
+- white: <span style="background:white;display:inline-block;padding:1px 5px;">#ffffff</span>
+- light grey: <span style="background:#d8d9db;display:inline-block;padding:1px 5px;">#d8d9db</span>
+- buttons on hover: <span style="background:#ebebeb;display:inline-block;padding:1px 5px;">#ebebeb</span>
+- button active state: <span style="background:#bbbcbe;display:inline-block;padding:1px 5px;">#bbbcbe</span>
+- function buttons: <span style="background:#df974c;display:inline-block;padding:1px 5px;">#df974c</span>
+- function buttons on hover: <span style="background:#dfb07e;display:inline-block;padding:1px 5px;">#dfb07e</span>
+- function button active state: <span style="background:#dd8d37;display:inline-block;padding:1px 5px;">#dd8d37</span>
 
 - The overall width of this calculator is 400px.
 
