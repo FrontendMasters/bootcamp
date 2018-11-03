@@ -6,4 +6,5 @@ node_modules
 public/
 .DS_Store
 yarn-error.log
-*.zip
+mole.zip
+fox.zip

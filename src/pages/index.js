@@ -2,6 +2,7 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Card from "../components/TOCCard";
 
+import "../../static/fox-pet/sprites.css";
 import "./index.css";
 
 const IndexPage = () => (
@@ -32,8 +33,7 @@ const IndexPage = () => (
     `}
     render={props => (
       <div className="index">
-        <div className="BootcampHero">
-        </div>
+        <div className="BootcampHero" />
 
         <Card
           title="Table of Contents"

@@ -7,6 +7,7 @@ module.exports = {
   },
   pathPrefix: "/bootcamp",
   plugins: [
+    `gatsby-plugin-remove-trailing-slashes`,
     `gatsby-plugin-layout`,
     {
       resolve: `gatsby-source-filesystem`,

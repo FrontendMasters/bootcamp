@@ -42,18 +42,17 @@ const getNextSleepTime = () =>
 function startGame() {
   writeToModal("");
   modFox("egg");
-  modScene("day");
+  modScene(WORLDS[state.world]);
   state.enum = "HATCHING";
-  setTimeout(hatch, 5000);
+  setTimeout(wake, 5000);
 }
 
 function hatch() {
   wake();
-  startTick();
 }
 
 function feed() {
-  stopTick();
+  // stopTick();
   state.enum = "FEEDING";
   state.timeToNextHungry = getNextHungerTime();
   state.timeToHungerKill = 0;
@@ -63,7 +62,7 @@ function feed() {
 
 function cleanUpPoop() {
   if (state.timeToPoopKill) {
-    stopTick();
+    // stopTick();
     state.timeToNextPoop = getNextPoopTime();
     state.timeToPoopKill = 0;
     togglePoopBag(true);
@@ -73,7 +72,7 @@ function cleanUpPoop() {
 }
 
 function die() {
-  stopTick();
+  // stopTick();
   state.enum = "DEAD";
   modScene("dead");
   modFox("dead");
@@ -105,13 +104,13 @@ function wake() {
 }
 
 function poop() {
-  stopTick();
+  // stopTick();
   state.enum = "POOPING";
   state.timeToNextPoop = 0;
   state.timeToPoopKill = getNextPoopTime();
   modFox("pooping");
   setTimeout(function() {
-    startTick();
+    // startTick();
     state.enum = "POOPED";
   }, 5000);
 }
@@ -128,7 +127,7 @@ function celebrate() {
   modFox("celebrate");
   setTimeout(function() {
     determineNextState();
-    startTick();
+    // startTick();
   }, 4000);
 }
 
@@ -205,9 +204,7 @@ function stopTick() {
 
 function startTick() {
   console.log("start tick", animationFrame);
-  if (!animationFrame) {
-    animationFrame = requestAnimationFrame(tick);
-  }
+  animationFrame = requestAnimationFrame(tick);
 }
 
 let nextCheck = Date.now();
@@ -216,31 +213,44 @@ let animationFrame = null;
 async function tick() {
   const now = Date.now();
   if (now > nextCheck) {
-    console.log(state.clock, state);
-    state.clock++;
-    if (state.timeToNextHungry && state.timeToNextHungry < state.clock) {
-      getHungry();
-    } else if (state.timeToNextPoop && state.timeToNextPoop < state.clock) {
-      poop();
-    } else if (state.timeToHungerKill && state.timeToHungerKill < state.clock) {
-      die();
-    } else if (state.timeToPoopKill && state.timeToPoopKill < state.clock) {
-      die();
-    } else if (state.timeToNextSleep && state.timeToNextSleep < state.clock) {
-      sleep();
-    } else if (state.timeToWake && state.timeToWake < state.clock) {
-      wake();
+    console.log("check");
+    if (
+      ![
+        "POOPING",
+        "FEEDING",
+        "CELEBRATING",
+        "HATCHING",
+        "DEAD",
+        "INIT"
+      ].includes(state.enum)
+    ) {
+      console.log(state.clock);
+      state.clock++;
+      if (state.timeToNextHungry && state.timeToNextHungry < state.clock) {
+        getHungry();
+      } else if (state.timeToNextPoop && state.timeToNextPoop < state.clock) {
+        poop();
+      } else if (
+        state.timeToHungerKill &&
+        state.timeToHungerKill < state.clock
+      ) {
+        die();
+      } else if (state.timeToPoopKill && state.timeToPoopKill < state.clock) {
+        die();
+      } else if (state.timeToNextSleep && state.timeToNextSleep < state.clock) {
+        sleep();
+      } else if (state.timeToWake && state.timeToWake < state.clock) {
+        wake();
+      }
     }
-
     nextCheck = now + CHECK_INTERVAL;
   }
-  if (animationFrame) {
-    animationFrame = requestAnimationFrame(tick);
-  }
+  animationFrame = requestAnimationFrame(tick);
 }
 
 async function init() {
   document.querySelector(".buttons").addEventListener("click", buttonClick);
+  startTick();
 }
 
 init();
