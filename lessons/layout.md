@@ -633,6 +633,14 @@ Files on Github https://github.com/FrontendMasters/bootcamp/tree/master/static/e
 
 <a href="https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout.zip" download>Download ZIP of Files</a>
 
+### Waaaa, it "doesn't work"!!!
+
+Remember to use the HTML and CSS validators if things are looking odd in the browser, or if the colors in the editor seem off. That's an indicator that you've made some errors along the way. The HTML validator is great for catching errors pertaining to syntax, tag spelling, tag nesting, and applying the right attributes to a given tag. The CSS validator will find unclosed curly brackets, properties and values that don't exist, and more.
+
+HTML validator: http://validator.w3.org/
+
+CSS validator: http://jigsaw.w3.org/css-validator
+
 ### Code a Blog Page
 
 I've given you some images and a picture of a web page layout. You have everything you need to lay this page out as a blog page. Can you figure out how to code this? To complete the layout, you will need:
