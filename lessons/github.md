@@ -145,3 +145,11 @@ Then consider these technical questions:
 - Have you made the pages look consistent across your site?
 - Do all of your links work correctly?
 - Does your site look good in Chrome and Firefox?
+
+### Waaaa, it "doesn't work"!!!
+
+Remember to use the HTML and CSS validators if things are looking odd in the browser, or if the colors in the editor seem off. That's an indicator that you've made some errors along the way. The HTML validator is great for catching errors pertaining to syntax, tag spelling, tag nesting, and applying the right attributes to a given tag. The CSS validator will find unclosed curly brackets, properties and values that don't exist, and more.
+
+HTML validator: http://validator.w3.org/
+
+CSS validator: http://jigsaw.w3.org/css-validator
