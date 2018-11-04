@@ -1,7 +1,7 @@
 ---
 title: "Final Project: Your Own Fox Pet"
 path: "/fox"
-order: 17
+order: 18
 ---
 
 The great and final project! I would argue this one is the most fun too. Do you remember [those virtual][virtual-pet] [pet toys][virtual-pet-2] from the 90s? They were the bane of every poor teacher and parent's existance. They're essentially needy little virutal pets that need you to feed and clean up their poops every few hours. We're going to build our own!
