@@ -30,7 +30,7 @@
   "main": "n/a",
   "scripts": {
     "build:static": "gatsby build --prefix-paths",
-    "build:zip:fox": "bestzip static/fox.zip static/fox-pet/",
+    "build:zip:fox": "bestzip static/fox.zip \"static/fox-pet/**/*.{css,html,png}\"",
     "build:zip:mole": "bestzip static/mole.zip static/mole-game/",
     "build:zip": "run-p build:zip:mole build:zip:fox",
     "build": "run-s build:zip build:static",

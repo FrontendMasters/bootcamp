@@ -12,7 +12,7 @@ Luckily, [Ms Alice Brereton][alice] has created some more beautiful assets for u
 
 The code for this game is hard, but this is your final project too! And there are _many_ correct ways to program it. I'll share with you some tips and tricks and how I did it but feel free to explore and learn!
 
-## Requirements
+# Requirements
 
 - The game starts in an initialized state. The user must press the center game to get started.
 - Users can switch between the three icons on the bottom using the left and right button. To press one of the icons, they will click the middle button. Users cannot directly click the icons.
@@ -34,25 +34,70 @@ Phew. That's a lot of requirements! Now let's start about starting points. I'm g
 
 [Here is the zip file you will need][zip]
 
-## Starting Points
+# Starting Points
 
-### Starting Point #1
+## Starting Point #1
 
 Only write the JavaScript. The HTML, all of the CSS, and all of the images will be provided for you. Take everything from the download.
 
-### Starting Point #2
+## Starting Point #2
 
 **Recommendated Starting Point**. You will have to write all the JavaScript and HTML from scratch. You will write _some_ of the CSS but not the animations parts. You will still have to do some difficult layout things with CSS.
 
 From the download, use all of the images _and_ the the `sprites.css` file. Make sure all the relative paths remain the same since it will reference the images by relative pathhs. Do not use fox.css, fox.js, or fox.html.
 
-### Starting Point #3
+## Starting Point #3
 
 Write everything totally from scratch using only the images I give you. This is going to be very hard if this is your very first exposure particulary to CSS because there are some advance concepts you'll need to accomplish, like animations. Do this only if you're comfortable (or feel comfortable diving into learning about) animation, CSS keyframes, and background positioning. You'll just need the images from the download but don't use any of the HTML, CSS, or JavaScript.
 
-## Concepts You Will Need.
+# Concepts You Will Need
 
-### Timing
+## Animation via step functions
+
+If you're doing option #1 or #2 above, this is just more for your information. We first showed you animations via keyframes in the Mole game. Now we're going to show you animations via the step function and sprites. A _sprite_ is one frame of an animation, laid out on a sprite sheet like below:
+
+<img style="background-color: black" src="fox-pet/pet/AtRest.png" />
+
+Notice all three frames of the image are on _one_ image. Also notice they (exactly) spaced out. The way we accomplish CSS here is to use the same keyframe animations we did before but instead of telling they keyframes to be smooth, we use a step functions to make the transitions to be sudden so that it seems like they're moving. Let's see some examples.
+
+```html
+<style>
+  .fox-bg {
+    background-image: url(./fox-pet/pet/AtRest.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 165px; /* exactly how tall the image is */
+  }
+
+  .fox-1 {
+    animation: 3s fox-movement linear infinite;
+    width: 100%;
+  }
+
+  .fox-2 {
+    animation: 3s fox-movement steps(3) infinite;
+    width: 100%;
+  }
+
+  .fox-3 {
+    animation: 3s fox-movement steps(3) infinite;
+    width: 117px;
+  }
+
+  @keyframes fox-movement {
+    to {
+      background-position: -372px /* this is exactly how wide the image is */
+    }
+  }
+</style>
+<div class="fox-1 fox-bg"></div>
+<div class="fox-2 fox-bg"></div>
+<div class="fox-3 fox-bg"></div>
+```
+
+The steps function takes how many steps you want as parameters. In our case, since there are three frames, we want 3 as how many steps there are. Then it will automatically do three equal steps which will make the fox seem animated. This is all done for you if you do option #1 or #2. No JavaScript needed for these animations.
+
+## Timing
 
 You had to deal with a similar thing with the mole game but now you have a more complicated flow of states you need to deal with. I recommend defining up-front all of the various states the fox can be in and then make sure that state is always synced. Something like this:
 
@@ -120,8 +165,47 @@ Notice also we're using these states in the event listener to decide what to do.
 
 Lastly, notice the clock only advances when the fox is idle. This is the sort of pattern you may consider following when tracking hunger and pooping in your game.
 
+## Looping around
+
+Here's a cool trick to loop around an array (like for the icons.) There's a thing called the _modulo operator_ in JavaScript allows you to do that. An _operator_ is something the `+`, `-`, `/`, or `*`: they _do_ or \_operate on something.
+
+The modulo, `%`, is like the _remainder_ of a long divison. Do you remember long division from school? If I said the answer of 7 / 3 was 2 r 1, where 2 is how many times 3 wholly fits into 7, and the r 1 is how many are left over, that 1 is what modulo gives you. So if I say 7 % 3, the answer would be 1. 9 % 3 is zero, and 100 % 3 is 1. So you can see it's useful for looping around. Let's see an example.
+
+```html
+<button id="increment">Add one</button>
+<div id="whole">1</div>
+<div id="modulo">1</div>
+<script>
+  const wholeDiv = document.getElementById('whole');
+  const moduloDiv = document.getElementById('modulo');
+
+  let num = 1;
+
+  document.getElementById('increment').addEventListener('click', function() {
+    num++;
+    wholeDiv.innerText = num;
+    moduloDiv.innerText = num % 5;
+  })
+</script>
+```
+
+As the first number continue continues the rise, notice the second one cycles 0 to 4. This is useful for anything that needs to loop around.
+
+# Final Advice
+
+Like the mole game before, this project is best broken into smaller pieces. Start with a very small task, then do another small task, then another … until eventually you've completed everything. Best of luck!
+
+- [Here is my CSS (game)][css-sprite].
+- [Here is my CSS (game)][css-game].
+- [Here is my HTML][html].
+- [Here is my JavaScript][js].
+
 [virtual-pet]: https://en.wikipedia.org/wiki/Tamagotchi
 [virtual-pet-2]: https://en.wikipedia.org/wiki/Giga_Pet
 [alice]: https://www.pickledalice.com/
 [fox]: ./fox-pet/fox.html
 [zip]: ./fox.zip
+[css-sprite]: https://github.com/FrontendMasters/bootcamp/blob/master/static/fox-pet/sprites.css
+[css-game]: https://github.com/FrontendMasters/bootcamp/blob/master/static/fox-pet/fox.css
+[html]: https://github.com/FrontendMasters/bootcamp/blob/master/static/fox-pet/fox.html
+[js]: https://github.com/FrontendMasters/bootcamp/blob/master/static/fox-pet/fox.js
