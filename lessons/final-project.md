@@ -100,7 +100,7 @@ Write everything totally from scratch using only the images I give you. This is 
 
 If you're doing option #1 or #2 above, this is just more for your information. We first showed you animations via keyframes in the Mole game. Now we're going to show you animations via the step function and sprites. A _sprite_ is one frame of an animation, laid out on a sprite sheet like below:
 
-<img style="background-color: black" src="fox-pet/pet/AtRest.png" />
+<img style="background-color: black" src="./fox-pet/pet/AtRest.png" />
 
 Notice all three frames of the image are on _one_ image. Also notice they (exactly) spaced out. The way we accomplish CSS here is to use the same keyframe animations we did before but instead of telling they keyframes to be smooth, we use a step functions to make the transitions to be sudden so that it seems like they're moving. Let's see some examples.
 
