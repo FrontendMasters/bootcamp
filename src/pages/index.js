@@ -2,7 +2,6 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Card from "../components/TOCCard";
 
-import "../../static/fox-pet/sprites.css";
 import "./index.css";
 
 const IndexPage = () => (

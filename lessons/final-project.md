@@ -4,6 +4,50 @@ path: "/fox"
 order: 18
 ---
 
+<style>
+.fox-sleep.fox {
+  background-image: url(./fox-pet/pet/Sleeping.png);
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 155px;
+  animation: sleeping 4s steps(4) infinite;
+}
+
+@keyframes sleeping {
+  to {
+    background-position: -1000px;
+  }
+}
+
+.fox-celebrate.fox {
+  background-image: url(./fox-pet/pet/Yay.png);
+  background-repeat: no-repeat;
+  width: 130.8px;
+  height: 213px;
+  animation: celebrate 2s steps(5) infinite;
+}
+
+@keyframes celebrate {
+  to {
+    background-position: -654px;
+  }
+}
+
+.fox-idle {
+  background-image: url(./fox-pet/pet/AtRest.png);
+  background-repeat: no-repeat;
+  width: 117px;
+  height: 165px;
+  animation: idle 2s steps(3) infinite;
+}
+
+@keyframes idle {
+  to {
+    background-position: -372px;
+  }
+}
+</style>
+
 The great and final project! I would argue this one is the most fun too. Do you remember [those virtual][virtual-pet] [pet toys][virtual-pet-2] from the 90s? They were the bane of every poor teacher and parent's existance. They're essentially needy little virutal pets that need you to feed and clean up their poops every few hours. We're going to build our own!
 
 Luckily, [Ms Alice Brereton][alice] has created some more beautiful assets for us to use for the game.
