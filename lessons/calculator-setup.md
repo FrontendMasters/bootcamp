@@ -1,6 +1,6 @@
 ---
 order: 7
-title: "Calulator HTML & CSS Exercise"
+title: "Calculator HTML & CSS Exercise"
 path: "/calculator-html"
 ---
 
