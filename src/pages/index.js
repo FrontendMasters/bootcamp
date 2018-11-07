@@ -32,8 +32,7 @@ const IndexPage = () => (
     `}
     render={props => (
       <div className="index">
-        <div className="BootcampHero">
-        </div>
+        <div className="BootcampHero" />
 
         <Card
           title="Table of Contents"

@@ -1,0 +1,267 @@
+.btn {
+  background-image: url(bg/BUTTONS/NotSelected.png);
+  background-position: 0px;
+  width: 62px;
+  height: 65px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.btn.middle-btn {
+  background-position: -84px 0px;
+}
+
+.btn.right-btn {
+  background-position: -167px 0px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-image: url(bg/BUTTONS/Hover.png);
+}
+
+.btn:active {
+  background-image: url(bg/BUTTONS/Selected.png);
+}
+
+.icon {
+  background-image: url(bg/ICONS/NotSelected.png);
+  background-position: 0px;
+  width: 56px;
+  height: 65px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.icon.poop-icon {
+  background-position: -162px 0px;
+}
+
+.icon.weather-icon {
+  background-position: -323px 0px;
+}
+
+.icon.highlighted {
+  background-image: url(bg/ICONS/Hover.png);
+}
+
+.icon.active {
+  background-image: url(bg/ICONS/Selected.png);
+}
+
+.fox-static {
+  background-image: url(./pet/FoxBase.png);
+  width: 117px;
+  height: 165px;
+}
+
+.fox-idle {
+  background-image: url(./pet/AtRest.png);
+  background-repeat: no-repeat;
+  width: 117px;
+  height: 165px;
+  animation: idle 2s steps(3) infinite;
+}
+
+@keyframes idle {
+  to {
+    background-position: -372px;
+  }
+}
+
+.fox.fox-pooping {
+  background-image: url(./pet/Pooping.png);
+  background-position: -1836px;
+  background-repeat: no-repeat;
+  width: 204px;
+  height: 202px;
+  animation: pooping 5s steps(10);
+}
+
+.fox.fox-pooped {
+  background-image: url(./pet/Pooping.png);
+  background-position: -1836px;
+  background-repeat: no-repeat;
+  width: 204px;
+  height: 202px;
+}
+
+@keyframes pooping {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -2040px;
+  }
+}
+
+.fox-celebrate.fox {
+  background-image: url(./pet/Yay.png);
+  background-repeat: no-repeat;
+  width: 130.8px;
+  height: 213px;
+  animation: celebrate 2s steps(5) infinite;
+}
+
+@keyframes celebrate {
+  to {
+    background-position: -654px;
+  }
+}
+
+.fox-rain.fox {
+  background-image: url(./pet/Rain.png);
+  background-repeat: no-repeat;
+  width: 134px;
+  height: 153px;
+  animation: sit-in-the-rain 2s steps(5) infinite alternate;
+}
+
+@keyframes sit-in-the-rain {
+  to {
+    background-position: -670px;
+  }
+}
+
+.fox-hungry.fox {
+  background-image: url(./pet/Hungry.png);
+  background-repeat: no-repeat;
+  width: 130px;
+  height: 160px;
+  animation: hungry 1s steps(2) infinite;
+}
+
+@keyframes hungry {
+  to {
+    background-position: -260px;
+  }
+}
+
+.fox-eating.fox {
+  background-image: url(./pet/Eating.png);
+  background-position: -1865.7px;
+  background-repeat: no-repeat;
+  width: 207.3px;
+  height: 148px;
+  animation: eating 10s steps(10);
+}
+
+@keyframes eating {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -2073px;
+  }
+}
+
+.fox-egg.fox {
+  background-image: url(./pet/Egg.png);
+  background-repeat: no-repeat;
+  background-position: -1050px;
+  width: 175px;
+  height: 217px;
+  animation: hatching 4s steps(7);
+}
+
+@keyframes hatching {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: -1225px;
+  }
+}
+
+.fox-dead.fox {
+  background-image: url(./pet/TombStone.png);
+  background-repeat: no-repeat;
+  width: 118px;
+  height: 119px;
+  animation: being-dead 1s steps(3) infinite;
+}
+
+@keyframes being-dead {
+  to {
+    background-position: -354px;
+  }
+}
+
+.fox-sleep.fox {
+  background-image: url(./pet/Sleeping.png);
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 155px;
+  animation: sleeping 4s steps(4) infinite;
+}
+
+@keyframes sleeping {
+  to {
+    background-position: -1000px;
+  }
+}
+
+.foreground-rain {
+  display: none;
+  background-image: url(./bg/rain.png);
+  animation: raining 0.5s steps(3) infinite;
+  width: 606px;
+  height: 516px;
+  overflow: hidden;
+  position: absolute;
+  top: 56px;
+  left: 60px;
+}
+
+.rain ~ .foreground-rain {
+  display: block;
+}
+
+@keyframes raining {
+  to {
+    background-position: -1818px;
+  }
+}
+
+.poop-bag {
+  background-image: url(./pet/PoopBag.png);
+  animation: swing-poop-bag 1s steps(3) infinite alternate;
+  width: 99px;
+  height: 104px;
+  overflow: hidden;
+}
+
+@keyframes swing-poop-bag {
+  to {
+    background-position: -297px;
+  }
+}
+
+.frame {
+  background-image: url(./bg/FRAME.png);
+}
+
+.game {
+  background-image: url(./bg/DAY.png);
+}
+
+.game.night {
+  background-image: url(./bg/NIGHT.png);
+}
+
+.game.dead {
+  background-image: url(./bg/DEAD.png);
+}
+
+.game.rain {
+  background-image: url(./bg/RAINY.png);
+}
+
+body {
+  background-image: url(./bg/Canvas.png);
+}

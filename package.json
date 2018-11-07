@@ -12,6 +12,7 @@
     "gatsby-plugin-klipse": "^2.1.0",
     "gatsby-plugin-layout": "^1.0.2",
     "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-remove-trailing-slashes": "^2.0.4",
     "gatsby-plugin-sharp": "^2.0.5",
     "gatsby-remark-autolink-headers": "^2.0.6",
     "gatsby-remark-copy-linked-files": "^2.0.5",
@@ -29,7 +30,9 @@
   "main": "n/a",
   "scripts": {
     "build:static": "gatsby build --prefix-paths",
-    "build:zip": "bestzip static/mole.zip static/mole-game/",
+    "build:zip:fox": "bestzip static/fox.zip static/fox-pet/",
+    "build:zip:mole": "bestzip static/mole.zip static/mole-game/",
+    "build:zip": "run-p build:zip:mole build:zip:fox",
     "build": "run-s build:zip build:static",
     "dev": "gatsby develop",
     "format": "prettier --write \"src/**/*.{js,jsx,md,css}\"",

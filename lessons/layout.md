@@ -6,9 +6,11 @@ path: "/layout"
 
 ## Demo
 
-Explore the box model, including `padding`, `border`, `margin`, `width`, and `height`, as well as the `display:inline` and `display: block` properties, using this CodePen link:
+Explore the box model, including `padding`, `border`, `margin`, `width`, and `height`, as well as the `display:inline` and `display: block` properties, using this CodePen link: https://codepen.io/jen4web/pen/JmweGL?editors=1100
 
-https://codepen.io/jen4web/pen/JmweGL?editors=1100
+CodePen end state for the box model discussion: https://codepen.io/jen4web/pen/zmVbrQ
+
+CodePen for discussion of rem vs em units of measure: https://codepen.io/jen4web/pen/wYLOpj
 
 ![Box model](./images/css-boxmodel.png)
 
@@ -485,11 +487,15 @@ We'll work with CodePen for learning how to style navigation bars using all of t
 
 For our vertical navigation bar, we'll turn off the bullets in the list, then style the list of links to look like buttons.
 
-Vertical navigation bars: https://codepen.io/jen4web/pen/xymQoM
+Vertical navigation bars start for lecture: https://codepen.io/jen4web/pen/xymQoM
+
+Vertical navigation bars finish state: https://codepen.io/jen4web/pen/ZqdZeW
 
 For our horizontal navigation bar, we'll make our unordered list go vertically on the page using `display: inline-block;`.
 
-Horizontal navigation bars: https://codepen.io/jen4web/pen/OBrrLR
+Horizontal navigation bars start for lecture: https://codepen.io/jen4web/pen/OBrrLR
+
+Horizontal navigation bars finish state: https://codepen.io/jen4web/pen/oarRXQ
 
 ## Introducing Flexbox
 
@@ -626,6 +632,14 @@ The `flex-basis` property, however, is more flexible. It says to make the width 
 Files on Github https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout
 
 <a href="https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/3-layout.zip" download>Download ZIP of Files</a>
+
+### Waaaa, it "doesn't work"!!!
+
+Remember to use the HTML and CSS validators if things are looking odd in the browser, or if the colors in the editor seem off. That's an indicator that you've made some errors along the way. The HTML validator is great for catching errors pertaining to syntax, tag spelling, tag nesting, and applying the right attributes to a given tag. The CSS validator will find unclosed curly brackets, properties and values that don't exist, and more.
+
+HTML validator: http://validator.w3.org/
+
+CSS validator: http://jigsaw.w3.org/css-validator
 
 ### Code a Blog Page
 

@@ -8,6 +8,12 @@ path: "/github"
 
 ### Getting Web Pages Online
 
+Files are found at https://github.com/FrontendMasters/bootcamp/tree/master/static/exercises/5-github
+
+[Download ZIP of Files](https://github.com/FrontendMasters/bootcamp/blob/master/static/exercises/5-github.zip)
+
+### Getting web pages online
+
 So far, the websites we've built have worked on the computer in front of us only. That's not much of a site if no one else can see it!
 
 You will need a way to display your web pages online so the world can see them. There are many ways to accomplish this. One of the oldest ways that still works great is the following:
@@ -139,3 +145,11 @@ Then consider these technical questions:
 - Have you made the pages look consistent across your site?
 - Do all of your links work correctly?
 - Does your site look good in Chrome and Firefox?
+
+### Waaaa, it "doesn't work"!!!
+
+Remember to use the HTML and CSS validators if things are looking odd in the browser, or if the colors in the editor seem off. That's an indicator that you've made some errors along the way. The HTML validator is great for catching errors pertaining to syntax, tag spelling, tag nesting, and applying the right attributes to a given tag. The CSS validator will find unclosed curly brackets, properties and values that don't exist, and more.
+
+HTML validator: http://validator.w3.org/
+
+CSS validator: http://jigsaw.w3.org/css-validator

@@ -216,6 +216,12 @@ http://validator.w3.org/
 
 ## Exercises
 
+### Waaaa, it "doesn't work"!!!
+
+Remember to use the HTML validator if things are looking odd in the browser, or if the colors in the editor seem off. That's an indicator that you've made some errors along the way. The validator is great for catching errors pertaining to syntax, tag spelling, tag nesting, and applying the right attributes to a given tag.
+
+http://validator.w3.org/
+
 ### Mark up a book chapter
 
 Go to this page: https://github.com/FrontendMasters/bootcamp/blob/master/static/exercises/1-html/book%20excerpt.txt
