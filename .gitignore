@@ -6,8 +6,5 @@ node_modules
 public/
 .DS_Store
 yarn-error.log
-<<<<<<< HEAD
-=======
 mole.zip
 fox.zip
->>>>>>> b7f7d1efb4caba201182e2f7561f1ddc80c63810
