@@ -1,19 +1,17 @@
 ---
 order: 14
-title: "Building an HTML, CSS, and JavaScript Calculator"
+title: "Exercise: Making the Calculator Work with JavaScript"
 path: "/calculator"
 ---
 
 <style>
   .calc {
     display: inherit;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 </style>
 
-Project time!
-
-We are going to rebuild the calculator on iOS! If you've never seen that before, here it is:
+We are going to rebuild the calculator on iOS! Here it is:
 
 <!-- ![Calculator build in HTML and CSS](./images/calculator.png) -->
 
@@ -21,9 +19,9 @@ We are going to rebuild the calculator on iOS! If you've never seen that before,
 
 My implementation of it is embedded here on the page so feel free to play with it.
 
-Let's going over the requirements:
+## Let's going over the requirements:
 
-- The calculator should like the above image
+- The calculator should work like it does above
 - The calculator should function like a normal calculator
 - **Do not** implement `%` or `.`. You can assume everything will be an integer.
 - `C` means clear. When a user clicks it, it should clear everything and go back to the first state it was in when the page loaded.
@@ -32,18 +30,6 @@ Let's going over the requirements:
 - Calculators tend to have some special behavior when you hit equals: if you type another number it erases the results and starts over. Feel free to do that but also free free (like me) to just treat it normally and make the user hit `C` if they want to clear it. Let's keep it simple.
 
 Okay, now that you have requirements, let's go over some tips and hints.
-
-## HTML and CSS Tips and Hints
-
-- Programming is all about taking large problems and breaking them into smaller problems. If you're trying to tackle too much at once, break it into two smaller problems and try to solve one of those.
-- Personally, I wrote the HTML and CSS first. Once that's all taken care of, then I do the JavaScript.
-- For the font of the "result screen" I'd just use `monospace`.
-- There are so many ways to write this. There is no one right way. My solution is not the only nor is it the best solution. Experiment. Try. Fail. Succeed. It's all about learning here.
-- Good idea to use `<button></button>` for the buttons. You have to deal with some extra styling stuff but it will make your code work pretty much automatically for disabled people. In general when writing HTML, if something serves the function of a button, make it a `<button></button>`.
-- I used multiple rows of flex layed out divs for the button. You could do it all in one div using the `flex-wrap` property.
-- The secret to getting equal gutters (which is what you call the black space between buttons): you can set width to be `24.5%` (so four of them fit on a line) and then use `justify-cotent: space-between` to evenly space them. That'll give them a gutter of roughly `.5%` of the whole width. The problem with using percentages in conjuections with heights: your heights and widths are different. 5% of height is not the same of 5% of width, and that'll make the gutters look weird. You want the bottom gutters to be the same size as the side gutters. `margin-bottom` to the resuce! If you give the row a `margin-bottom` of `.5%` (if you're using my same numbers) then that'll work since margin is always measured as a function of width (just one of those things you have to know!) Hopefully that helps.
-- Sometimes I do the math to get things right. Sometimes I just guess-and-check to see if it looks okay.
-- You can add a class to get the orange buttons. Or you could try `:last-child` (assuming you have row div.)
 
 ## JavaScript Tips and Hints
 
@@ -73,12 +59,18 @@ Since you're doing math here, you'll need the numbers to actually be of the numb
 
 You'll also see that we used the `typeof` operator. `typeof` tells whatever the type of the thing that comes right after it is. This is useful to quickly see what's happening in your code. Be careful because `typeof` is not always useful, but it is useful for telling numbers and strings apart.
 
-## Answer
+## Starting HTML & CSS
+
+You can copy and paste the HTML & CSS to start with locally, or use our [calculcator starter CodePen][calcstarter] to focus on writing the JavaScript.
 
 - [The HTML][html] (you can view source on it)
-- [The JavaScript][js]
 - [The CSS][css]
 
-[html]: /calculator.html
-[js]: /calculator.js
-[css]: /calculator.css
+**Now go code the JavaScript to make the calculator work!**
+
+### Answer: [The JavaScript][js]
+
+[html]: https://github.com/FrontendMasters/bootcamp/blob/master/static/calculator.html
+[css]: https://github.com/FrontendMasters/bootcamp/blob/master/static/calculator.css
+[js]: https://github.com/FrontendMasters/bootcamp/blob/master/static/calculator.js
+[calcstarter]: https://codepen.io/frontendmasters/pen/wQMgWR
