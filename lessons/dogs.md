@@ -47,9 +47,12 @@ Let's chat about CSS animations a second here:
     animation: spin 3s ease-in-out infinite;
   }
 </style>
-<img src="../mole-game/king-mole-hungry.png" style="background-color: brown; border-radius: 50%" class="mole color" />
-<img src="../mole-game/mole-hungry.png" style="background-color: brown; border-radius: 50%" class="mole spin" />
+<img src="https://frontendmasters.github.io/bootcamp/mole-game/mole-hungry.png" style="background-color: brown; border-radius: 50%" class="mole color" />
+<img src="https://frontendmasters.github.io/bootcamp/mole-game/king-mole-hungry.png" style="background-color: brown; border-radius: 50%" class="mole spin" />
 ```
+
+<!-- <img src="../mole-game/king-mole-hungry.png" style="background-color: brown; border-radius: 50%" class="mole color" />
+<img src="../mole-game/mole-hungry.png" style="background-color: brown; border-radius: 50%" class="mole spin" /> -->
 
 - These `@keyframes` animations are re-usable animations that we define once and can use as many times as we want.
 - The second word (in our case `spin` and `psychadelic`) are what we called the animations, similar to a variable name. It's what we can refer to it as later.
