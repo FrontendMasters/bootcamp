@@ -6,6 +6,8 @@ order: 16
 
 Let's make a photo gallery. We have a bunch of cute dog photos (of my beloved pupper, Luna) that we want to show one at a time. So, using CSS and JavaScript together, how could we do that?
 
+[Here are some images of my dog][luna] if you need images, otherwise feel free to use whatever images you want!
+
 Make a file called index.html, and put this in it:
 
 ```htm
@@ -301,7 +303,7 @@ When you pull code off sites like this, you should make a decent attempt to lear
 If you want to, you can totally swap an image in there too. Change your nav to look like this:
 
 ```htm
-<nav class="main-nav"><img class="brand" alt="logo" src="./bh.png" /></nav>
+<nav class="main-nav"><img class="brand" alt="logo" src="./images/bh.png" /></nav>
 ```
 
 and this to your CSS
@@ -323,7 +325,7 @@ and this to your CSS
 
 Take your exisitng portfolio and add some sort of animation to it or add a photo gallery, either using Swiper or the one you wrote personally!
 
-[photos]: ./luna-pics.zip
+[luna]: ./luna.zip
 [my-version]: ./gallery/index.html
 [my-version-2]: ./gallery/with-libraries.html
 [api]: http://idangero.us/swiper/api/#parameters
