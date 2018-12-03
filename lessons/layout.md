@@ -499,7 +499,7 @@ Horizontal navigation bars finish state: https://codepen.io/jen4web/pen/oarRXQ
 
 ## Introducing Flexbox
 
-Flexbox is a new way of managing the layout of web pages. It has become extremely popular and useful in the last 2 years. Flexbox itself would take an entire day to explain well, so we are going to focus on just a few properties you'll need to make simple layouts. You can find much more about Flexbox at Frontend Masters: https://frontendmasters.com/courses/css-grids-flexbox/
+Flexbox is a new way of managing the layout of web pages. It has recently become extremely popular and useful. Flexbox itself would take an entire day to explain well, so we are going to focus on just a few properties you'll need to make simple layouts. You can find much more about Flexbox at Frontend Masters: https://frontendmasters.com/courses/css-grids-flexbox/
 
 To make flexbox work, you need two HTML tags that have a parent-child relationship. These are called the _flex container_ (parent) and the _flex item_ (child). Example:
 
