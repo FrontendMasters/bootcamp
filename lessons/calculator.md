@@ -19,7 +19,7 @@ We are going to rebuild the calculator on iOS! Here it is:
 
 My implementation of it is embedded here on the page so feel free to play with it.
 
-## Let's going over the requirements:
+## Let's go over the requirements:
 
 - The calculator should work like it does above
 - The calculator should function like a normal calculator
