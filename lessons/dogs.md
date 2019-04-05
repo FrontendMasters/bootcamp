@@ -87,7 +87,7 @@ Good luck!
 If you want to see my answers, [here is the JavaScript][js], [here is the CSS][css], and [here is the HTML][html].
 
 [dogceo]: https://dog.ceo/dog-api/documentation/
-[dog-viewer]: ../dog-viewer/dog.html
+[dog-viewer]: https://frontendmasters.github.io/bootcamp/dog-viewer/dog.html
 [loading]: https://codepen.io/tag/spinner/#
 [js]: https://github.com/btholt/bootcamp/blob/master/static/dog-viewer/dog.js
 [css]: https://github.com/btholt/bootcamp/blob/master/static/dog-viewer/dog.css
