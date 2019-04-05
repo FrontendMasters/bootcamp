@@ -106,7 +106,7 @@ If you want to see my answers, [here is the JavaScript][js], [here is the CSS][c
 [alice]: https://www.pickledalice.com/
 [mole]: ./mole-game/mole.html
 [epoch]: https://en.wikipedia.org/wiki/Unix_time
-[assets]: ../mole.zip
+[assets]: https://frontendmasters.github.io/bootcamp/mole.zip
 [js]: https://github.com/btholt/bootcamp/blob/master/static/mole-game/mole.js
 [css]: https://github.com/btholt/bootcamp/blob/master/static/mole-game/mole.css
 [html]: https://github.com/btholt/bootcamp/blob/master/static/mole-game/mole.html
