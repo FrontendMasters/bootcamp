@@ -1,5 +1,5 @@
 ---
-order: 15
+order: 18
 title: "Exercise: Feed-A-Star-Mole"
 path: "/mole"
 ---

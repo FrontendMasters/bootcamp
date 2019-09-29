@@ -1,7 +1,7 @@
 ---
 title: "AJAX"
 path: "/ajax"
-order: 17
+order: 16
 ---
 
 Web development is full of stupid acronyms. AJAX is one of the worst offenders of this because it actually means something different than what it does. It stands for "asynchronous JavaScript and XML" which is not what it does. However it morphed and evolved and now it's the term that we use to represent what you do when a website requests more information from a server after the page has loaded.

@@ -1,7 +1,7 @@
 ---
 path: "/interactive"
 title: "Making Your Site Interactive"
-order: 16
+order: 15
 ---
 
 Let's make a photo gallery. We have a bunch of cute dog photos (of my beloved pupper, Luna) that we want to show one at a time. So, using CSS and JavaScript together, how could we do that?
