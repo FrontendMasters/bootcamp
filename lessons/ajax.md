@@ -34,7 +34,7 @@ Make a new file called `doggos.js` and put the following:
 ```js
 const BREEDS_URL = "https://dog.ceo/api/breeds/image/random";
 
-const promise = fetch(DOG_URL);
+const promise = fetch(BREEDS_URL);
 
 promise
   .then(function(response) {
