@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #464646;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  height: 60px;
+  background-color: #f3f4f6;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header .brand-name img {
+  width: 100px;
+  margin-left: 20px;
+}
+
+header .brand-name a .spaceng {
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #0000009f;
+  display: block;
+  margin-top: 50px;
+  float: right;
+}
+
+.list-group ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-group ul li {
+  margin-right: 25px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #0000009f;
+}
+
+a:hover {
+  color: rgba(5, 228, 5, 0.8);
+}
+
+.list-group ul li:last-child {
+  margin-right: 80px;
+}
+
+.list-group ul li a.button {
+  background-color: #0000009f;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  transition: all 0.4s ease-out;
+  color: #f3f4f6;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+}
+
+.list-group ul li a.button:hover {
+  background-color: #f3f4f6;
+  border: 2px solid #0000009f;
+  color: #0000009f;
+}
+
+/* contact */
+.contact-us {
+  padding: 100px 15px;
+  background: url(../assets/images/undraw_contact_us_15o2.png);
+}
+
+.contact-us .section-title h1::before {
+  left: 30%;
+}
+
+.contact-us .contact-form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 40px;
+  border: 1px solid #eeeeee;
+}
+
+.contact-us .contact-form .text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.contact-us .contact-form .text h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us .contact-form .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+  margin: 0;
+}
+
+.contact-us .contact-form .space-between {
+  justify-content: space-between;
+}
+
+.contact-us .contact-form .col-6 {
+  flex: 0 0 calc(100% - 15px);
+  max-width: calc(100% - 15px);
+}
+
+.contact-us .contact-form .col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.contact-us .contact-form .form-control {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-us .contact-form textarea.form-control {
+  height: 140px;
+  resize: none;
+}
+
+.contact-us .contact-form .form-control::placeholder {
+  color: #838383;
+}
+
+.contact-us .contact-form .button a {
+  float: right;
+  margin-top: -10px;
+  margin-bottom: 50px;
+  background-color: #0000009f;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  transition: all 0.4s ease-out;
+  color: #f3f4f6;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+}
+
+.contact-us .contact-form .button a:hover {
+  background-color: #f3f4f6;
+  border: 2px solid #0000009f;
+  color: #0000009f;
+}
+
+/* footer */
+
+footer {
+  padding: 10px 25px;
+  border-top: 1px solid #aaa;
+}
+
+footer .box-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .box-wrap .box-1 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  margin: 0 0 0 30px;
+}
+
+footer .box-wrap .box-1 .social-links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer .box-wrap .box-1 .social-links .fab {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #00f;
+  background-color: #d5d5d5;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer .box-wrap .box-2 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  margin-top: 50px;
+}
+
+footer .box-wrap .box-2 .box-text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .box-wrap .box-2 .box-text a {
+  flex: 0 0 25%;
+  max-width: 25%;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+footer .box-wrap .box-1 img {
+  width: 100px;
+}
+
+@media (max-width: 767px) {
+  body header .brand-name img {
+    width: 70px;
+    margin-left: 10px;
+  }
+
+  body header .brand-name a .spaceng {
+    display: none;
+  }
+
+  body .list-group ul li {
+    margin-right: 10px;
+  }
+
+  body a {
+    font-size: 13px;
+  }
+  .list-group ul li:last-child {
+    margin-right: 10px;
+  }
+
+  .list-group ul li a.button {
+    padding: 8px 6px;
+    letter-spacing: 2px;
+  }
+
+  /* main */
+
+  .contact-us .contact-form {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .contact-us .contact-form {
+    padding: 40px 20px;
+  }
+  .contact-us .contact-form .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  /* footer */
+
+  footer {
+    padding: 10px 25px;
+  }
+
+  footer .box-wrap {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  footer .box-wrap .box-1 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 0 0 0 15px;
+  }
+
+  footer .box-wrap .box-1 .social-links .fab {
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 3px;
+    border-radius: 3px;
+  }
+
+  footer .box-wrap .box-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 25px;
+  }
+
+  footer .box-wrap .box-2 .box-text a {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  footer .box-wrap .box-1 img {
+    width: 70px;
+  }
+}
