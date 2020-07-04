@@ -1,4 +1,4 @@
-# Frontend Masters Bootcamp 🏕
+# This is my version of Frontend Masters Bootcamp 🏕
 
 ### More information about the bootcamp: https://frontendmasters.com/bootcamp/
 ### Course website: https://frontendmasters.github.io/bootcamp/
