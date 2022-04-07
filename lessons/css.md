@@ -310,7 +310,7 @@ While `background: lightblue url(image.jpg) no-repeat left top;` means a backgro
 ```html
 <style>
 p.example-background2 {
-    background: lightblue url(http://placepuppy.net/300/300) no-repeat left top;
+    background: lightblue url(https://place-puppy.com/300x300) no-repeat left top;
     height: 300px;
 }
 </style>
