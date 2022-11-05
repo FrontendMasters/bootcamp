@@ -70,7 +70,8 @@ function handleSymbol(value) {
       if (buffer.length === 1) {
         buffer = "0";
       } else {
-        buffer = buffer.substring(0, buffer.length - 1);
+        const bufferString = buffer.toString()
+        buffer = bufferString.substring(0, bufferString.length - 1);
       }
       break;
     case "+":
