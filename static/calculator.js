@@ -45,8 +45,11 @@ function flushOperation(intBuffer) {
     runningTotal -= intBuffer;
   } else if (previousOperator === "×") {
     runningTotal *= intBuffer;
-  } else {
+  } else if(previousOperator === "÷") {
     runningTotal /= intBuffer;
+  }
+  else{
+    runningTotal /= 100;
   }
 }
 
@@ -77,6 +80,7 @@ function handleSymbol(value) {
     case "-":
     case "×":
     case "÷":
+    case "%":
       handleMath(value);
       break;
   }

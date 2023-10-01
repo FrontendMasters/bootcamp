@@ -11,25 +11,55 @@ body {
   width: 400px;
   background-color: black;
   color: white;
+  border: 8px double blue;
+  border-radius: 10px;
+  margin: 25px auto;
 }
 
 .screen {
   color: white;
   font-size: 40px;
+  height: 80px;
   font-family: "Courier New", Courier, monospace;
   text-align: right;
   padding: 20px 5px;
+  border-bottom: 8px double blue;
 }
 
 .calc-button {
-  background-color: #d8d9db;
+  background-color: #dadfe9;
   color: black;
+  font-weight: 500;
   height: 100px;
   width: 24.5%;
   border: none;
-  border-radius: 0;
+  border-radius: 10px;
   font-size: 40px;
   cursor: pointer;
+}
+
+#c{
+  background-color: rgb(72, 240, 72);
+}
+
+#c:hover{
+  background-color: rgb(6, 248, 6);
+}
+
+#percentage{
+  background-color:rgb(231, 49, 49);
+}
+
+#percentage:hover{
+  background-color:red;
+}
+
+#back{
+  background-color: rgb(214, 214, 60);
+}
+
+#back:hover{
+  background-color: yellow;
 }
 
 .calc-button:hover {
@@ -37,7 +67,7 @@ body {
 }
 
 .calc-button:active {
-  background-color: #bbbcbe;
+  background-color: #d6d8db;
 }
 
 .double {
@@ -49,16 +79,16 @@ body {
 }
 
 .calc-button:last-child {
-  background-color: #df974c;
+  background-color: #4cd5df;
   color: white;
 }
 
 .calc-button:last-child:hover {
-  background-color: #dfb07e;
+  background-color: #04e8f8;
 }
 
 .calc-button:last-child:active {
-  background-color: #dd8d37;
+  background-color: #04e8f8;
 }
 
 .calc-button-row {
