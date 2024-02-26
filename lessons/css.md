@@ -388,19 +388,19 @@ a.example:active {
 
 [https://developer.mozilla.org/en-US/docs/Web/HTML/Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 
-**InternetingIsHard.com**
+**Interneting Is Hard**
 
-- Hello CSS [https://internetingishard.com/html-and-css/hello-css/](https://internetingishard.com/html-and-css/hello-css/)
-- CSS Selectors [https://internetingishard.com/html-and-css/css-selectors/](https://internetingishard.com/html-and-css/css-selectors/)
-- Links and Images [https://internetingishard.com/html-and-css/links-and-images/](https://internetingishard.com/html-and-css/links-and-images/)
+- Hello CSS [https://internetingishard.netlify.app/html-and-css/hello-css/](https://internetingishard.netlify.app/html-and-css/hello-css/)
+- CSS Selectors [https://internetingishard.netlify.app/html-and-css/css-selectors/](https://internetingishard.netlify.app/html-and-css/css-selectors/)
+- Links and Images [https://internetingishard.netlify.app/html-and-css/links-and-images/](https://internetingishard.netlify.app/html-and-css/links-and-images/)
 
 **Validating CSS**
 
 [http://jigsaw.w3.org/css-validator/](http://jigsaw.w3.org/css-validator/)
 
-**Convert pixels to ems and %**
+**Convert pixels to ems and % (**
 
-[http://www.pxtoem.com/](http://www.pxtoem.com/)
+[https://pxtoem.com.au/](https://pxtoem.com.au/)
 
 **Color palettes, if you need help creating one**
 
