@@ -119,7 +119,7 @@
 }
 
 .next {
-  color: #d74f25;
+  color: #eb4715;
   float: right;
 }
 
@@ -149,7 +149,7 @@
 }
 
 .klipse-result::before {
-  content: "Result";
+  content: "Result: ";
   font-weight: bold;
   background-color: white;
   position: absolute;
