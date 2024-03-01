@@ -18,7 +18,7 @@ steps:
     displayName: "Installing Node.js"
 
   - script: |
-      npm install
+      npm ci # Use Package lock to install CI stuff, faster, more sercure
       npm run build
     displayName: "Running npm install and build"
 
