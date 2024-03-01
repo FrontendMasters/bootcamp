@@ -6,7 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "code-mirror-themes": "^1.0.0",
-    "gatsby": "^2.0.9",
+    "gatsby": "^2.32.13",
     "gatsby-cli": "^2.4.1",
     "gatsby-link": "^2.0.1",
     "gatsby-plugin-klipse": "^2.1.0",
